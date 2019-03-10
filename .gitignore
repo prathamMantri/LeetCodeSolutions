@@ -24,3 +24,5 @@
 hs_err_pid*
 
 /out/
+/.idea/misc.xml
+/.idea/workspace.xml
