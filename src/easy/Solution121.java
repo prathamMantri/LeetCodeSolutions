@@ -1,4 +1,4 @@
-package problem121;
+package easy;
 
 /*
 Say you have an array for which the ith element is the price of a given stock on day i.
@@ -22,7 +22,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
  */
 
 
-class Solution {
+class Solution121 {
     public int maxProfit(int[] prices) {
 
         if (prices.length < 2) {
@@ -48,6 +48,7 @@ class Solution {
                 sell = prices[i + 1];
             }
 
+
             if (profit < (sell - buy)) {
                 profit = sell - buy;
             }
@@ -59,9 +60,9 @@ class Solution {
 
     public static void main(String args[]) {
 
-        int[] price = {1, 2};
+        int[] price = {1,2,3,4,5};
 
-        Solution sol = new Solution();
+        Solution121 sol = new Solution121();
         sol.maxProfit(price);
 
     }
