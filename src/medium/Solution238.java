@@ -19,7 +19,7 @@ public class Solution238 {
      */
 
     public int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
+        /*int n = nums.length;
         int[] res = new int[n];
         res[0] = 1;
         for (int i = 1; i < n; i++) {
@@ -29,6 +29,18 @@ public class Solution238 {
         for (int i = n - 1; i >= 0; i--) {
             res[i] *= right;
             right *= nums[i];
+        }
+        return res;*/
+        int[] res = new int[nums.length];
+        int runningPrefix = 1;
+        for(int i=0; i<nums.length;i++){
+            res[i] = runningPrefix;
+            runningPrefix = runningPrefix*nums[i];
+        }
+        int runningSuffix = 1;
+        for(int i=nums.length-1; i>=0; i--){
+            res[i]= runningSuffix*res[i];
+            runningSuffix = runningSuffix * nums[i];
         }
         return res;
     }

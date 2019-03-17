@@ -1,4 +1,6 @@
-package easy.binaryTreeSolutions;
+package easy;
+
+import model.TreeNode;
 
 public class Solution108 {
 
