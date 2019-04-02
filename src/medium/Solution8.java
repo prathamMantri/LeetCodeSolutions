@@ -7,10 +7,8 @@ public class Solution8 {
 
     public int myAtoi(String str) {
 
-        if(str.length()==0){
-            return 0;
-        }
-
+        String newString = str.trim();
+        if(newString.length()==0){return 0;}
         Map<Character, Integer> intMap = new HashMap<>();
 
         intMap.put('1', 1);
@@ -25,10 +23,20 @@ public class Solution8 {
         intMap.put('0', 0);
         intMap.put('-',-1);
 
-        String newString = str.trim();
-        Integer sum = 0;
+        Integer sum = 0, j=0, k=0;
+        while(j<newString.length()){
 
-        for(int i=0, j=newString.length()-1; i<newString.length(); i++,j--){
+            if(!intMap.containsKey(newString.charAt(j))){
+                break;
+            }else if (intMap.get(newString.charAt(j)) == -1) {
+                j++;
+                continue;
+            }
+            k++;
+            j++;
+        }
+
+        for(int i=0; i<newString.length(); i++){
             if(!intMap.containsKey(newString.charAt(i))){
                 break;
             }
@@ -36,17 +44,22 @@ public class Solution8 {
                 if(intMap.get(newString.charAt(i))== -1){
                     continue;
                 }
-                sum = sum + (intMap.get(newString.charAt(i)) * (int)Math.pow(10,j));
+                if(sum>=Integer.MAX_VALUE){
+                    return Integer.MAX_VALUE;
+                }if(sum<=Integer.MIN_VALUE){
+                    return Integer.MIN_VALUE;
+                }
+                sum = sum + (intMap.get(newString.charAt(i)) * (int)Math.pow(10,--k));
+
             }
-
         }
-
+        System.out.println(Integer.MIN_VALUE);
         return newString.charAt(0)=='-'?sum*(-1):sum;
     }
 
     public static void main(String[] args) {
         Solution8 sol = new Solution8();
-        System.out.println(sol.myAtoi("      -987"));
+        System.out.println(sol.myAtoi("-91283472"));
     }
 
 }
