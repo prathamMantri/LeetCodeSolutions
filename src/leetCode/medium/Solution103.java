@@ -1,4 +1,4 @@
-package medium;
+package leetCode.medium;
 
 import model.TreeNode;
 

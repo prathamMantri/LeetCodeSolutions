@@ -1,4 +1,4 @@
-package medium;
+package leetCode.medium;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -80,6 +80,7 @@ public class Solution43 {
         resultString.insert(0, stringMap.get(result%10l));
         return resultString.toString();
     }
+
 
     public static void main(String[] args) {
         Solution43 sol = new Solution43();

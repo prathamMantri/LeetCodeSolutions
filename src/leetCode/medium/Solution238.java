@@ -1,4 +1,4 @@
-package medium;
+package leetCode.medium;
 
 public class Solution238 {
     /*

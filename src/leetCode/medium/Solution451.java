@@ -1,9 +1,6 @@
-package medium;
-
-import easy.Solution771;
+package leetCode.medium;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 public class Solution451 {
 
