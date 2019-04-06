@@ -1,4 +1,4 @@
-package RandomPrograms;
+package randomPrograms;
 
 import java.util.HashMap;
 import java.util.Map;

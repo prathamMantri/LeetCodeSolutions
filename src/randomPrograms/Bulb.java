@@ -1,4 +1,4 @@
-package RandomPrograms;
+package randomPrograms;
 
 public class Bulb {
 
