@@ -4,9 +4,6 @@ import java.util.HashMap;
 
 public class nthSmallestElement {
 
-
-
-
     int findNthSmallestElement(int[] a, int n) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
