@@ -24,7 +24,7 @@ public class Solution55 {
      *              jump length is 0, which makes it impossible to reach the last index
      **/
 
-    public boolean canJump(int[] nums) {
+  /*  public boolean canJump(int[] nums) {
         int endIndex = nums.length - 1;
         int startIndex = endIndex - 1;
         if(nums.length<2){
@@ -44,6 +44,21 @@ public class Solution55 {
             startIndex--;
         }
         return nums[startIndex] >= (endIndex - startIndex);
+    }*/
+
+        public boolean canJump(int[] nums) {
+            int i = nums.length-1;
+            int lastIndex = nums.length-1;
+            boolean canJumpFlag = false;
+            while(i>    0){
+                if(lastIndex - (--i) <= nums[i] ){
+                    canJumpFlag = true;
+                    lastIndex = i;
+                }else{
+                    canJumpFlag = false;
+                }
+            }
+            return canJumpFlag;
     }
 
     public static void main(String args[]){
