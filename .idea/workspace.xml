@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd1c73d-641f-4d54-95a5-eea5cb45997d" name="Default Changelist" comment="P-12345: Deepest Leaves Sum">
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution231.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution268.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution387.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution443.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution819.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution146.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution200.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution48.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution50.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution973.java" afterDir="false" />
+    <list default="true" id="dfd1c73d-641f-4d54-95a5-eea5cb45997d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution112.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution122.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution70.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution113.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution64.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,13 +75,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution387">
-    <configuration name="Solution12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.medium.Solution12" />
+  <component name="RunManager" selected="Application.Solution27">
+    <configuration name="Solution122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution122" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.medium.*" />
+          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution27" />
+      <module name="LeetCodeSolution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetCode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,19 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.medium.Solution50" />
-      <module name="LeetCodeSolution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetCode.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Solution819" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution819" />
       <module name="LeetCodeSolution" />
@@ -147,19 +142,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution50" />
-      <item itemvalue="Application.Solution12" />
       <item itemvalue="Application.Solution819" />
       <item itemvalue="Application.Solution443" />
       <item itemvalue="Application.Solution387" />
+      <item itemvalue="Application.Solution122" />
+      <item itemvalue="Application.Solution27" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution27" />
+        <item itemvalue="Application.Solution122" />
         <item itemvalue="Application.Solution387" />
         <item itemvalue="Application.Solution443" />
         <item itemvalue="Application.Solution819" />
-        <item itemvalue="Application.Solution12" />
-        <item itemvalue="Application.Solution50" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +204,13 @@
       <workItem from="1579148684630" duration="2781000" />
       <workItem from="1579314735915" duration="1983000" />
       <workItem from="1579371767176" duration="4344000" />
-      <workItem from="1579456973227" duration="8825000" />
+      <workItem from="1579456973227" duration="11451000" />
+      <workItem from="1579536401472" duration="216000" />
+      <workItem from="1579572992154" duration="6501000" />
+      <workItem from="1579623528377" duration="66000" />
+      <workItem from="1579902477913" duration="1879000" />
+      <workItem from="1580141294214" duration="768000" />
+      <workItem from="1580353483101" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Deleting unnecessary files">
       <created>1552188664402</created>
@@ -386,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579062905605</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="P-12345: More solutions">
+      <created>1579493714623</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579493714623</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +438,8 @@
     <MESSAGE value="Create README.md&#10;&#10;Signed-off-by: Prathamesh Mantri &lt;pmantri@cccis.com&gt;" />
     <MESSAGE value="P-12345: Deepest Leaves Sum" />
     <MESSAGE value="P-12345: BST to GST" />
-    <option name="LAST_COMMIT_MESSAGE" value="P-12345: BST to GST" />
+    <MESSAGE value="P-12345: More solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="P-12345: More solutions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -570,52 +579,52 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>81</line>
+          <line>57</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>55</line>
+          <line>71</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>64</line>
+          <line>80</line>
           <option name="timeStamp" value="201" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>65</line>
+          <line>81</line>
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>67</line>
+          <line>83</line>
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>69</line>
+          <line>85</line>
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>56</line>
+          <line>72</line>
           <option name="timeStamp" value="205" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>53</line>
+          <line>69</line>
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>51</line>
+          <line>67</line>
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution146.java</url>
-          <line>62</line>
+          <line>78</line>
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -625,113 +634,138 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>74</line>
+          <line>86</line>
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>71</line>
+          <line>83</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>61</line>
+          <line>73</line>
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>65</line>
+          <line>77</line>
           <option name="timeStamp" value="225" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>43</line>
+          <line>52</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>49</line>
+          <line>58</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>35</line>
+          <line>44</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>34</line>
+          <line>43</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>40</line>
+          <line>49</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>47</line>
+          <line>56</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
-          <line>44</line>
+          <line>53</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>28</line>
+          <line>35</line>
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>21</line>
+          <line>28</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>22</line>
+          <line>29</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>24</line>
+          <line>31</line>
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>23</line>
+          <line>30</line>
           <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution819.java</url>
-          <line>25</line>
+          <line>32</line>
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution387.java</url>
-          <line>30</line>
+          <line>35</line>
           <option name="timeStamp" value="269" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution387.java</url>
-          <line>20</line>
+          <line>25</line>
           <option name="timeStamp" value="270" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution387.java</url>
-          <line>15</line>
+          <line>20</line>
           <option name="timeStamp" value="271" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution387.java</url>
-          <line>13</line>
+          <line>18</line>
           <option name="timeStamp" value="272" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution387.java</url>
-          <line>12</line>
+          <line>17</line>
           <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution122.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="293" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
