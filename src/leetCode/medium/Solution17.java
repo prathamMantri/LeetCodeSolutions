@@ -23,7 +23,7 @@ public class Solution17 {
      ********/
 
     List<String> result = new ArrayList<>();
-    HashMap<String, String> mappings = new HashMap() {{
+    HashMap mappings = new HashMap() {{
         put("2", "abc");
         put("3", "def");
         put("4", "ghi");
@@ -42,8 +42,8 @@ public class Solution17 {
 
         String digit = next_digits.substring(0, 1);
 
-        for (int i = 0; i < mappings.get(digit).length(); i++) {
-            String letter = mappings.get(digit).substring(i, i + 1);
+        for (int i = 0; i < ((String) mappings.get(digit)).length(); i++) {
+            String letter = ((String) mappings.get(digit)).substring(i, i + 1);
             backtrack(combination + letter, next_digits.substring(1));
         }
     }

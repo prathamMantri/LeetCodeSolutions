@@ -9,12 +9,12 @@ public class Solution973 {
 
     public static void main(String[] args) {
 
-        // int[][] input = {{1,3},{-2,2}};
+        //int[][] input = {{1,3},{-2,2}};
         int[][] input = {{0, 1}, {1, 0}};
         //int[][] input = {{3,3},{5,-1},{-2,4}};
 
         Solution973 sol = new Solution973();
-        sol.kClosest(input, 2);
+        sol.kClosest(input, 1);
 
 
     }
