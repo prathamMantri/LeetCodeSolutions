@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd1c73d-641f-4d54-95a5-eea5cb45997d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution112.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution122.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution27.java" afterDir="false" />
+    <list default="true" id="dfd1c73d-641f-4d54-95a5-eea5cb45997d" name="Default Changelist" comment="P-12345: More solutions">
+      <change afterPath="$PROJECT_DIR$/MainFuntion.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/leetCode/easy/Solution70.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution113.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetCode/medium/Solution560.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/microsoftInterviewQuestions/LongestSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/microsoftInterviewQuestions/MinimumMoves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/microsoftInterviewQuestions/NumbersWithEqualDigitSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/microsoftInterviewQuestions/StringWithout3Identical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/microsoftInterviewQuestions/UniqueFrequency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomPrograms/Bulb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomPrograms/Bulb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomPrograms/ConcatAB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomPrograms/ConcatAB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +48,7 @@
   <component name="ProjectId" id="1WGSGzzrMBI8eWXw0bjfYIbKDcQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Solution43&#9;FILE&#9;file://C:/PersonalProjects/LeetCodeSolutions/src/medium/Solution43.java" />
@@ -52,6 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559005547565" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last.edited.regexp" value="Sample+Text" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -75,13 +80,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution27">
-    <configuration name="Solution122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution122" />
+  <component name="RunManager" selected="Application.StringWithout3Identical">
+    <configuration name="LongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="microsoftInterviewQuestions.LongestSubstring" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="PATTERN" value="microsoftInterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution27" />
+    <configuration name="MinimumMoves" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="microsoftInterviewQuestions.MinimumMoves" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="PATTERN" value="microsoftInterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution387" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution387" />
+    <configuration name="Solution560" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.medium.Solution560" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="PATTERN" value="leetCode.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution443" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution443" />
+    <configuration name="StringWithout3Identical" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="microsoftInterviewQuestions.StringWithout3Identical" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="PATTERN" value="microsoftInterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution819" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.easy.Solution819" />
+    <configuration name="UniqueFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="microsoftInterviewQuestions.UniqueFrequency" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.easy.*" />
+          <option name="PATTERN" value="microsoftInterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution819" />
-      <item itemvalue="Application.Solution443" />
-      <item itemvalue="Application.Solution387" />
-      <item itemvalue="Application.Solution122" />
-      <item itemvalue="Application.Solution27" />
+      <item itemvalue="Application.Solution560" />
+      <item itemvalue="Application.MinimumMoves" />
+      <item itemvalue="Application.LongestSubstring" />
+      <item itemvalue="Application.UniqueFrequency" />
+      <item itemvalue="Application.StringWithout3Identical" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution27" />
-        <item itemvalue="Application.Solution122" />
-        <item itemvalue="Application.Solution387" />
-        <item itemvalue="Application.Solution443" />
-        <item itemvalue="Application.Solution819" />
+        <item itemvalue="Application.StringWithout3Identical" />
+        <item itemvalue="Application.UniqueFrequency" />
+        <item itemvalue="Application.LongestSubstring" />
+        <item itemvalue="Application.MinimumMoves" />
+        <item itemvalue="Application.Solution560" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +215,11 @@
       <workItem from="1579623528377" duration="66000" />
       <workItem from="1579902477913" duration="1879000" />
       <workItem from="1580141294214" duration="768000" />
-      <workItem from="1580353483101" duration="638000" />
+      <workItem from="1580353483101" duration="4760000" />
+      <workItem from="1580436063703" duration="3304000" />
+      <workItem from="1580491070824" duration="4753000" />
+      <workItem from="1580583919496" duration="6520000" />
+      <workItem from="1581133969922" duration="22451000" />
     </task>
     <task id="LOCAL-00001" summary="Deleting unnecessary files">
       <created>1552188664402</created>
@@ -394,7 +403,28 @@
       <option name="project" value="LOCAL" />
       <updated>1579493714623</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="P-12345: More solutions">
+      <created>1580360928766</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1580360928766</updated>
+    </task>
+    <task id="LOCAL-00028" summary="P-12345: More solutions">
+      <created>1580509224847</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1580509224848</updated>
+    </task>
+    <task id="LOCAL-00029" summary="P-12345: More solutions">
+      <created>1581285088843</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1581285088843</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +432,16 @@
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -638,21 +678,6 @@
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="223" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="224" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="225" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution12.java</url>
           <line>52</line>
           <option name="timeStamp" value="234" />
@@ -744,28 +769,123 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution122.java</url>
-          <line>14</line>
+          <line>20</line>
           <option name="timeStamp" value="288" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
-          <line>12</line>
+          <line>20</line>
           <option name="timeStamp" value="290" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
-          <line>9</line>
+          <line>17</line>
           <option name="timeStamp" value="291" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
-          <line>7</line>
+          <line>15</line>
           <option name="timeStamp" value="292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution27.java</url>
-          <line>6</line>
+          <line>14</line>
           <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution204.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/hard/Solution297.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/hard/Solution297.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/hard/Solution297.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/hard/Solution297.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution929.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution973.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution268Advance.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution268Advance.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/easy/Solution268Advance.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetCode/medium/Solution560.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/microsoftInterviewQuestions/StringWithout3Identical.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="359" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/microsoftInterviewQuestions/StringWithout3Identical.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="360" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/microsoftInterviewQuestions/StringWithout3Identical.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="361" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

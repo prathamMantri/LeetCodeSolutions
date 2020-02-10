@@ -44,10 +44,6 @@ public class ConcatAB {
     }
         return sb;
 }
-
-}
-
-class ConcatABTest {
     public static void main(String[] args) {
         ConcatAB concatAB = new ConcatAB();
         concatAB.solution(8, 9);

@@ -17,9 +17,7 @@ public class Bulb {
         System.out.println(count);
         return count;
     }
-}
 
-class TestBulb{
     public static void main(String[] args){
         Bulb bulb = new Bulb();
         int[] bulbs = {5,4,3,2,1};
