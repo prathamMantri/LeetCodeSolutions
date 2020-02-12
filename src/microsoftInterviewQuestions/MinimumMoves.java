@@ -1,6 +1,7 @@
 package microsoftInterviewQuestions;
 
 public class MinimumMoves {
+
     public static void main(String[] args) {
         MinimumMoves solution = new MinimumMoves();
         System.out.println(solution.solution("baaaaa"));
@@ -13,6 +14,7 @@ public class MinimumMoves {
     /***
      *
      * https://leetcode.com/discuss/interview-question/398026/
+     * Important
      *
      */
 

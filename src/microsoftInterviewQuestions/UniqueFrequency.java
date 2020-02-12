@@ -7,10 +7,6 @@ import java.util.TreeSet;
 
 public class UniqueFrequency {
 
-    public static void main(String[] args) {
-        UniqueFrequency sol = new UniqueFrequency();
-        System.out.println(sol.solution("example"));
-    }
 
     /****
      *
@@ -45,4 +41,10 @@ public class UniqueFrequency {
         }
         return count;
     }
+
+    public static void main(String[] args) {
+        UniqueFrequency sol = new UniqueFrequency();
+        System.out.println(sol.solution("example"));
+    }
+
 }

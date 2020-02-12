@@ -7,11 +7,11 @@ import java.util.List;
  * https://leetcode.com/discuss/interview-question/406031/
  */
 
-public class LargestInteger {
+public class PairOfPositiveNegative {
 
     public static void main(String[] args) {
 
-        LargestInteger sol = new LargestInteger();
+        PairOfPositiveNegative sol = new PairOfPositiveNegative();
         int[] input = {3, 2, -2, 5, -3};
         int[] input2 = {1, 2, 3, -4};
         System.out.println(sol.solution(input));

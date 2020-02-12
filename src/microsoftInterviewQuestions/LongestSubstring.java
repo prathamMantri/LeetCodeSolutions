@@ -18,6 +18,9 @@ public class LongestSubstring {
      * Example 2:
      * Input: "aabbaabbaabbaa"
      * Output: "aabbaabbaabbaa"
+     *
+     * Important
+     *
      */
 
     public String solution(String s) {
