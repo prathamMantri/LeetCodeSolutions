@@ -22,7 +22,6 @@ class Solution64 {
                 System.out.println(minimum[i][j]);
             }
         }
-
         return minimum[grid.length - 1][grid[0].length - 1];
     }
 }

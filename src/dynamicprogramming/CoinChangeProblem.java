@@ -1,5 +1,7 @@
 package dynamicprogramming;
 
+import java.util.Arrays;
+
 public class CoinChangeProblem {
 
     /**
@@ -32,9 +34,7 @@ public class CoinChangeProblem {
 
     public int change(int x, int[] coins) {
         int[] cache = new int[coins.length];
-        for (int i = 0; i < cache.length; i++) {
-            cache[i] = -1;
-        }
+        Arrays.fill(cache, -1);
         return change(x, coins, cache);
     }
 
@@ -50,7 +50,7 @@ public class CoinChangeProblem {
                     c = change(x, coins, cache);
                     cache[x - coin] = c;
                 }
-                min = min > c + 1 ? c + 1 : min;
+                min = Math.min(min, c + 1);
             }
         }
         return min;
