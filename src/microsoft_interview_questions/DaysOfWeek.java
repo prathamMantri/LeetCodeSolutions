@@ -1,4 +1,4 @@
-package microsoftinterviewquestions;
+package microsoft_interview_questions;
 
 import java.util.HashMap;
 import java.util.Map;
