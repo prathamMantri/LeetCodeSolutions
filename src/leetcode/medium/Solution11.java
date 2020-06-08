@@ -1,10 +1,7 @@
 package leetcode.medium;
 
-import java.util.Deque;
-import java.util.LinkedList;
-
 class Solution11 {
-    public int maxArea(int[] height) {
+    /*public int maxArea(int[] height) {
         Deque<Integer> histogram = new LinkedList<>();
         int currentArea = 0;
         int maxArea = 0;
@@ -35,5 +32,34 @@ class Solution11 {
 
         return maxArea;
 
+    }*/
+
+    public static void main(String[] args) {
+        Solution11 sol = new Solution11();
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+
+        System.out.println(sol.maxArea(height));
+
+
     }
+
+    public int maxArea(int[] height) {
+        if (height.length == 0)
+            return 0;
+        int maxArea = 0;
+        int start = 0;
+        int end = height.length - 1;
+        while (start < end) {
+            int area = (end - start) * Math.min(height[start], height[end]);
+            maxArea = Math.max(area, maxArea);
+
+            if (height[start] < height[end]) {
+                start++;
+            } else {
+                end--;
+            }
+        }
+        return maxArea;
+    }
+
 }

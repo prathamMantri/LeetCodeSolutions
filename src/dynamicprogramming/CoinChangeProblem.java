@@ -20,6 +20,16 @@ public class CoinChangeProblem {
      * Step 1: Create an array called cache of size of given number and initialize to -1.
      * Step 2: Pass that array in the another function which will do actual calculations.
      * **********************Actual calculation************************/
+    public static void main(String[] args) {
+
+        int x = 10;
+        int[] coins = {1, 2, 5};
+
+        CoinChangeProblem cc = new CoinChangeProblem();
+        System.out.println(cc.change(x, coins));
+
+    }
+
     /**
      * Step 1: First define the base case to stop the function.
      * Step 2: Set min to the given number.
@@ -33,12 +43,13 @@ public class CoinChangeProblem {
 
 
     public int change(int x, int[] coins) {
-        int[] cache = new int[coins.length];
+        int[] cache = new int[x];
         Arrays.fill(cache, -1);
         return change(x, coins, cache);
     }
 
     private int change(int x, int[] coins, int[] cache) {
+        if (x < 0) return -1;
         if (x == 0) return 0;
         int min = x;
         for (int coin : coins) {
@@ -47,7 +58,7 @@ public class CoinChangeProblem {
                 if (cache[x - coin] >= 0) {
                     c = cache[x - coin];
                 } else {
-                    c = change(x, coins, cache);
+                    c = change(x - coin, coins, cache);
                     cache[x - coin] = c;
                 }
                 min = Math.min(min, c + 1);
@@ -55,4 +66,6 @@ public class CoinChangeProblem {
         }
         return min;
     }
+
+
 }

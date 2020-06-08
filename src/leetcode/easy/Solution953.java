@@ -1,8 +1,5 @@
 package leetcode.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Solution953 {
     public static void main(String[] args) {
 
@@ -15,34 +12,32 @@ public class Solution953 {
 
     public boolean isAlienSorted(String[] words, String order) {
 
-
-        List<Character> orders = new ArrayList<>();
         Boolean res = true;
-
-        for (int i = 0; i < order.length(); i++) {
-            orders.add(i, order.charAt(i));
+        if (words.length == 2) {
+            return compare(words[0], words[1], order);
         }
 
-
         for (int i = 0; i <= words.length - 2; i++) {
-            if (res) {
-                res = compare(words[i], words[i + 1], orders);
-                if (words[i].length() > words[i + 1].length()) {
-                    return false;
-                }
-            } else
+            if (res)
+                res = compare(words[i], words[i + 1], order);
+            else
                 return false;
         }
         return res;
     }
 
-    public boolean compare(String s1, String s2, List<Character> orders) {
-        for (int i = 0; i <= Math.min(s1.length(), s2.length()) - 1; i++) {
-            if (orders.indexOf(s1.charAt(i)) > orders.indexOf(s2.charAt(i))) {
-                return false;
-            }
+    public boolean compare(String s1, String s2, String order) {
+        int i = 0, j = 0, index1, index2;
+
+        while (i < s1.length() && i < s2.length()) {
+            index1 = order.indexOf(s1.charAt(i));
+            index2 = order.indexOf(s2.charAt(j));
+            if (index1 == index2) {
+                i++;
+                j++;
+            } else return index1 <= index2;
         }
-        return true;
+        return s1.length() < s2.length();
     }
 
 }
