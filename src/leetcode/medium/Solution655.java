@@ -53,7 +53,7 @@ public class Solution655 {
         while (!queue.isEmpty()) {
             NodeLevel nodeLevel = queue.poll();
             tempRes.add(nodeLevel);
-            if (nodeLevel.node.data == -1) {
+            if (nodeLevel.node.val == -1) {
                 if (!queue.isEmpty()) {
                     queue.add(new NodeLevel(new TreeNode(-1), 0, ""));
                 }

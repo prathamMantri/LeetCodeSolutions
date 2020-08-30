@@ -7,9 +7,9 @@ public class SearchBST {
         if (root == null) {
             return null;
         }
-        if (root.data == val) {
+        if (root.val == val) {
             return root;
         }
-        return searchBST(root.data > val ? root.left : root.right, val);
+        return searchBST(root.val > val ? root.left : root.right, val);
     }
 }

@@ -43,7 +43,7 @@ public class Solution297 {
         if (root == null) {
             str += "null,";
         } else {
-            str += root.data + ",";
+            str += root.val + ",";
             str = rserialize(root.left, str);
             str = rserialize(root.right, str);
         }

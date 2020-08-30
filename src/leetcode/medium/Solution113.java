@@ -33,13 +33,13 @@ class Solution113 {
     public void getPath(List<List<Integer>> paths, List<Integer> path, TreeNode root, int sum) {
         if (root == null)
             return;
-        if (root.left == null && root.right == null && root.data == sum) {
-            path.add(root.data);
+        if (root.left == null && root.right == null && root.val == sum) {
+            path.add(root.val);
             paths.add(new ArrayList(path));
         }
-        path.add(root.data);
-        getPath(paths, new ArrayList<Integer>(path), root.left, sum - root.data);
-        getPath(paths, new ArrayList<Integer>(path), root.right, sum - root.data);
+        path.add(root.val);
+        getPath(paths, new ArrayList<Integer>(path), root.left, sum - root.val);
+        getPath(paths, new ArrayList<Integer>(path), root.right, sum - root.val);
     }
-    
+
 }

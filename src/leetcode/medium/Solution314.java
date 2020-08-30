@@ -35,7 +35,7 @@ public class Solution314 {
 
         int index = 0;
         List<Integer> list = new ArrayList<>();
-        list.add(root.data);
+        list.add(root.val);
         map.put(index, list);
 
         verticalOrder(root.left, map, index + 1);
@@ -60,13 +60,13 @@ public class Solution314 {
         if (map.containsKey(index)) {
             list = map.get(index);
             if (index < 0) {
-                list.add(list.size() - 1, node.data);
+                list.add(list.size() - 1, node.val);
             } else {
-                list.add(list.size(), node.data);
+                list.add(list.size(), node.val);
             }
         } else {
             list = new ArrayList<>();
-            list.add(0, node.data);
+            list.add(0, node.val);
             map.put(index, list);
         }
         verticalOrder(node.left, map, index + 1);

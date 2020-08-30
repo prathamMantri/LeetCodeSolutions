@@ -21,7 +21,7 @@ public class Solution101 {
             return true;
         if(left==null || right==null)
             return false;
-        return left.data==right.data && compareTrees(left.left, right.right) && compareTrees(left.right, right.left);
+        return left.val == right.val && compareTrees(left.left, right.right) && compareTrees(left.right, right.left);
 
     }
 

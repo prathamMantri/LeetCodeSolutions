@@ -44,7 +44,7 @@ public class Solution173 {
      */
     public int next() {
         nextNode = st.pop();
-        int res = nextNode.data;
+        int res = nextNode.val;
         if (nextNode.right != null) {
             pushInStack(nextNode.right);
         }

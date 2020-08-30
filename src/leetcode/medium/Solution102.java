@@ -33,14 +33,14 @@ public class Solution102 {
 
         while (!queue.isEmpty()) {
             TreeNode currentNode = queue.poll();
-            if (currentNode.data == -1) {
+            if (currentNode.val == -1) {
                 if (!queue.isEmpty()) {
                     queue.add(new TreeNode(-1));
                 }
                 results.add(new ArrayList<>(res));
                 res.clear();
             } else {
-                res.add(currentNode.data);
+                res.add(currentNode.val);
                 if (currentNode.left != null)
                     queue.add(currentNode.left);
                 if (currentNode.right != null)

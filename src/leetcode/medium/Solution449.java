@@ -36,7 +36,7 @@ public class Solution449 {
         if (root == null) {
             return serialize.append("null ");
         }
-        serialize.append(root.data);
+        serialize.append(root.val);
         serialize.append(" ");
         serialize(root.left, serialize);
         serialize(root.right, serialize);

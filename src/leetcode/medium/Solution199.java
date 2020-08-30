@@ -13,7 +13,7 @@ public class Solution199 {
             return null;
         }
         if (root.left == null && root.right == null) {
-            return new ArrayList<>(Arrays.asList(root.data));
+            return new ArrayList<>(Arrays.asList(root.val));
         }
         Map<Integer, Integer> map = new HashMap<>();
         findVisible(map, root, level, res);
@@ -23,8 +23,8 @@ public class Solution199 {
     void findVisible(Map<Integer, Integer> map, TreeNode node, int level, List<Integer> list) {
 
         if (!map.containsKey(level)) {
-            map.put(level, node.data);
-            list.add(node.data);
+            map.put(level, node.val);
+            list.add(node.val);
         }
         level++;
         if (node.right != null) {

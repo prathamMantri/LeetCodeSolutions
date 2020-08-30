@@ -14,16 +14,16 @@ public class Solution270 {
     }
 
     public int closestValue(TreeNode root, double target) {
-        double diff = Math.abs(root.data - target);
-        return findClosestDist(root, target, diff, root.data);
+        double diff = Math.abs(root.val - target);
+        return findClosestDist(root, target, diff, root.val);
     }
 
     int findClosestDist(TreeNode node, double target, double diff, int res) {
         if (node != null) {
-            double currDiff = Math.abs(node.data - target);
-            res = currDiff < diff ? node.data : res;
-            diff = Math.min(diff, Math.abs(node.data - target));
-            if (target < node.data) {
+            double currDiff = Math.abs(node.val - target);
+            res = currDiff < diff ? node.val : res;
+            diff = Math.min(diff, Math.abs(node.val - target));
+            if (target < node.val) {
                 return findClosestDist(node.left, target, diff, res);
             } else {
                 return findClosestDist(node.right, target, diff, res);

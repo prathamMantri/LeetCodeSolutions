@@ -19,7 +19,7 @@ public class Solution103 {
         while(!s1.isEmpty() || !s2.isEmpty()){
             while(!s1.isEmpty()){
                 TreeNode node = s1.pop();
-                list.add(node.data);
+                list.add(node.val);
                 if(node.left!=null) s2.add(node.left);
                 if(node.right!=null) s2.add(node.right);
             }
@@ -28,7 +28,7 @@ public class Solution103 {
             list.clear();
             while(!s2.isEmpty()){
                 TreeNode node = s2.pop();
-                list.add(node.data);
+                list.add(node.val);
                 if(node.right!=null) s1.add(node.right);
                 if(node.left!=null) s1.add(node.left);
             }

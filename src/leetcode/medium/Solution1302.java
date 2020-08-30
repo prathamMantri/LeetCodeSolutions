@@ -41,7 +41,7 @@ public class Solution1302 {
             return;
         }
         level++;
-        levelMap.put(level, null != levelMap.get(level) ? levelMap.get(level) + root.data : root.data);
+        levelMap.put(level, null != levelMap.get(level) ? levelMap.get(level) + root.val : root.val);
         deepestLeavesSum(root.left, level, levelMap, true);
         deepestLeavesSum(root.right, level, levelMap, false);
     }

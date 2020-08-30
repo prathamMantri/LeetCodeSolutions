@@ -8,7 +8,7 @@ public class Solution112 {
             return false;
         }
         if ((root.left == null) && (root.right == null))
-            return sum - root.data == 0;
-        return hasPathSum(root.left, sum - root.data) || hasPathSum(root.right, sum - root.data);
+            return sum - root.val == 0;
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }

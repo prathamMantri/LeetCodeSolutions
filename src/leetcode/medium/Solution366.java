@@ -35,7 +35,7 @@ public class Solution366 {
             return null;
         }
         if (root.left == null && root.right == null) {
-            leaves.add(root.data);
+            leaves.add(root.val);
             root = null;
         } else {
             root.left = collectLeaves(root.left, leaves);

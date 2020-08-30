@@ -23,7 +23,7 @@ public class NumberOfVisibleNodesFromLeft {
     void findVisible(Map<Integer, Integer> map, TreeNode node, int level) {
 
         if (!map.containsKey(level)) {
-            map.put(level, node.data);
+            map.put(level, node.val);
         }
         level++;
         if (node.left != null) {

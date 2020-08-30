@@ -1,7 +1,9 @@
 package leetcode.easy;
 
+import java.util.ArrayList;
+
 public class Solution7 {
-    public int reverse(int x) {
+    /*public int reverse(int x) {
         if(x>=Integer.MAX_VALUE || x<=Integer.MIN_VALUE){
             return 0;
         }
@@ -27,9 +29,36 @@ public class Solution7 {
         }catch(NumberFormatException ex){
             return 0;
         }
-    }
-    public static void main(String[] args){
+    }*/
+
+
+    public static void main(String[] args) {
         Solution7 sol = new Solution7();
-        System.out.println(sol.reverse(-2147483648));
+        System.out.println(sol.reverse(1563847412));
+    }
+
+    public int reverse(int x) {
+
+        if (x <= Integer.MIN_VALUE || x >= Integer.MAX_VALUE) {
+            return 0;
+        }
+        ArrayList<Integer> list = new ArrayList<>();
+        while (x != 0) {
+            list.add(x % 10);
+            x = x / 10;
+        }
+        int power = list.size();
+        int sum = 0;
+        for (int i = 0; i < list.size(); i++) {
+            Double pow = sum + Math.pow(10, --power) * list.get(i);
+            if (pow >= Integer.MAX_VALUE) {
+                return 0;
+            } else if (pow <= Integer.MIN_VALUE) {
+                return 0;
+            } else {
+                sum = sum + (int) (Math.pow(10, power)) * list.get(i);
+            }
+        }
+        return sum;
     }
 }
