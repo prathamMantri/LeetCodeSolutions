@@ -1,13 +1,12 @@
 package model;
 
-import leetcode.easy.Solution1470;
-import leetcode.easy.Solution448;
-import leetcode.easy.Solution605;
-import leetcode.easy.Solution914;
+import leetcode.easy.*;
 import leetcode.medium.Solution15;
 import leetcode.medium.Solution442;
 import leetcode.medium.Solution62;
 import leetcode.medium.Solution63;
+import mockinterviews.MockWithEdith;
+import mockinterviews.SortedArrayToBST;
 
 import java.util.Arrays;
 
@@ -18,8 +17,11 @@ public class Main {
         main.solution62();
         main.solution63();
         main.solution1470();
-        main.solution914();*/
+        main.solution914();
         main.solution605();
+        main.mockWithEdith();
+        main.sortedArrayToBST(); */
+        main.solution299();
     }
 
     void solution15() {
@@ -69,4 +71,27 @@ public class Main {
         int[][] obstacleGrid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
         System.out.println(sol.uniquePathsWithObstacles(obstacleGrid));
     }
+
+    void mockWithEdith() {
+        MockWithEdith sol = new MockWithEdith();
+        String input = "12345 abcd";
+        System.out.println(sol.myAtoi(input));
+    }
+
+    void solution299() {
+        Solution299 sol = new Solution299();
+        String secret = "1123";
+        String guess = "0111";
+
+        System.out.println(sol.getHint(secret, guess));
+    }
+
+
+    void sortedArrayToBST() {
+        SortedArrayToBST sol = new SortedArrayToBST();
+        int[] num = {-10, -3, 0, 5, 9};
+        System.out.println(sol.sortedArrayToBST(num).val);
+    }
+
+
 }

@@ -1,4 +1,4 @@
-package leetcode.easy;
+package mockinterviews;
 
 public class MockWithRoshan {
 
