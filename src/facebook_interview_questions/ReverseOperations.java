@@ -53,7 +53,7 @@ public class ReverseOperations {
 
         ListNode next;
         ListNode curr = head;
-        while (curr.next != null && curr.data % 2 == 0) {
+        while (curr.next != null && curr.val % 2 == 0) {
             next = curr.next;
             curr.next = prev;
             prev = curr;
@@ -98,7 +98,7 @@ public class ReverseOperations {
     void printLinkedList(ListNode head) {
         System.out.print("[");
         while (head != null) {
-            System.out.print(head.data);
+            System.out.print(head.val);
             head = head.next;
             if (head != null)
                 System.out.print(" ");

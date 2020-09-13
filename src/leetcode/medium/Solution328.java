@@ -58,7 +58,7 @@ public class Solution328 {
     void printLinkedList(ListNode head) {
         System.out.print("[");
         while (head != null) {
-            System.out.print(head.data);
+            System.out.print(head.val);
             head = head.next;
             if (head != null)
                 System.out.print(" ");

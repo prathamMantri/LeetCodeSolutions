@@ -1,10 +1,7 @@
 package model;
 
 import leetcode.easy.*;
-import leetcode.medium.Solution15;
-import leetcode.medium.Solution442;
-import leetcode.medium.Solution62;
-import leetcode.medium.Solution63;
+import leetcode.medium.*;
 import mockinterviews.MockWithEdith;
 import mockinterviews.SortedArrayToBST;
 
@@ -20,8 +17,17 @@ public class Main {
         main.solution914();
         main.solution605();
         main.mockWithEdith();
-        main.sortedArrayToBST(); */
+        main.sortedArrayToBST();
         main.solution299();
+        main.solution69();
+        main.solution82();
+        main.asteroidCollision();*/
+        main.combinationSum3();
+    }
+
+    void combinationSum3() {
+        Solution216 sol = new Solution216();
+        System.out.println(sol.combinationSum3(3, 9));
     }
 
     void solution15() {
@@ -35,19 +41,16 @@ public class Main {
         int[] num = {-1, 0, 1, 2, -1, -4};
         System.out.println(Arrays.toString(sol.shuffle(num, 3)));
     }
-
     void solution442() {
         Solution442 sol = new Solution442();
         int[] num = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(sol.findDuplicates(num));
     }
-
     void solution448() {
         Solution448 sol = new Solution448();
         int[] num = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(sol.findDisappearedNumbers(num));
     }
-
     void solution605() {
         Solution605 sol = new Solution605();
         int[] num = {1, 0, 0, 0, 1};
@@ -66,6 +69,12 @@ public class Main {
         System.out.println(sol.uniquePaths(m, n));
     }
 
+    void solution69() {
+        Solution69 sol = new Solution69();
+        int m = 4;
+        System.out.println(sol.mySqrt(m));
+    }
+
     void solution63() {
         Solution63 sol = new Solution63();
         int[][] obstacleGrid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
@@ -78,6 +87,17 @@ public class Main {
         System.out.println(sol.myAtoi(input));
     }
 
+    void solution82() {
+        Solution82 sol = new Solution82();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(3);
+        head.next.next.next.next = new ListNode(4);
+        head.next.next.next.next.next = new ListNode(5);
+        System.out.println(sol.deleteDuplicates(head));
+    }
+
     void solution299() {
         Solution299 sol = new Solution299();
         String secret = "1123";
@@ -86,11 +106,32 @@ public class Main {
         System.out.println(sol.getHint(secret, guess));
     }
 
-
     void sortedArrayToBST() {
         SortedArrayToBST sol = new SortedArrayToBST();
         int[] num = {-10, -3, 0, 5, 9};
         System.out.println(sol.sortedArrayToBST(num).val);
+    }
+
+    void asteroidCollision() {
+        Solution735 sol = new Solution735();
+        int[] nums = {-2, -2, 1, -2};
+        int[] nums1 = {-2, 2, 1, -2};
+        int[] nums2 = {5, 10, -5};
+        int[] nums3 = {8, -8};
+        int[] nums4 = {10, 2, -5};
+        int[] nums5 = {-2, -1, 1, 2};
+        int[] nums6 = {-2, -1, 1, -2};
+        int[] nums7 = {1, -1, -2, -2};
+        int[] nums8 = {-9, 5, -7, 5, 2, -5, -5, 8, 3, 10};
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums1)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums2)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums3)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums4)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums5)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums6)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums7)));
+        System.out.println(Arrays.toString(sol.asteroidCollision(nums8)));
     }
 
 

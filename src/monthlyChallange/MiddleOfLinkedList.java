@@ -10,7 +10,7 @@ public class MiddleOfLinkedList {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        System.out.println(sol.middleNode(head).data);
+        System.out.println(sol.middleNode(head).val);
     }
 
     public ListNode middleNode(ListNode head) {

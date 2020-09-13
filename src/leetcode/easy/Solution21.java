@@ -46,12 +46,12 @@ public class Solution21 {
                 break;
             }
 
-            if(l1.data<=l2.data){
+            if (l1.val <= l2.val) {
                 curr.next = l1;
-                l1=l1.next;
-            }else{
+                l1 = l1.next;
+            } else {
                 curr.next = l2;
-                l2=l2.next;
+                l2 = l2.next;
             }
 
             curr = curr.next;

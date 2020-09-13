@@ -24,11 +24,11 @@ public class Solution1019 {
         Stack<Integer> st = new Stack<>();
         ListNode curr = head;
         Map<Integer, Integer> map = new HashMap<>();
-        st.push(curr.data);
+        st.push(curr.val);
         curr = curr.next;
 
         while (curr != null) {
-            int val = curr.data;
+            int val = curr.val;
             if (val < st.peek()) {
                 st.push(val);
             } else {
@@ -49,7 +49,7 @@ public class Solution1019 {
 
         while (head != null) {
 
-            res[i] = map.get(head.data);
+            res[i] = map.get(head.val);
             head = head.next;
             i++;
 
