@@ -1,15 +1,9 @@
-package leetcode.easy;
+package leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution784 {
-
-
-    public static void main(String[] args) {
-        Solution784 sol = new Solution784();
-        System.out.println(sol.letterCasePermutation("a1b1"));
-    }
 
     public List<String> letterCasePermutation(String S) {
 
