@@ -2,31 +2,28 @@ package leetcode.medium;
 
 import model.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class Solution129 {
+public class Solution988 {
 
-    public int sumNumbers(TreeNode root) {
+    public String smallestFromLeaf(TreeNode root) {
         if (root == null) {
-            return 0;
+            return "";
         }
         if (root.left == null && root.right == null) {
-            return root.val;
+            return (char) (root.val + 'a') + "";
         }
         String s = "";
-        List<String> paths = new ArrayList<>();
-        int sum = 0;
+        Set<String> paths = new TreeSet<>();
         findPath(paths, root, s);
-        for (String vals : paths) {
-            sum = sum + Integer.parseInt(vals);
-        }
-        return sum;
+        return paths.iterator().next();
     }
 
-    void findPath(List<String> paths, TreeNode node, String s) {
+    void findPath(Set<String> paths, TreeNode node, String s) {
 
-        s = s + node.val;
+        char c = (char) (node.val + 'a');
+        s = c + s;
         if (node.left == null && node.right == null) {
             paths.add(s);
             return;
@@ -37,6 +34,7 @@ public class Solution129 {
         if (node.right != null) {
             findPath(paths, node.right, s);
         }
+
     }
 
 }

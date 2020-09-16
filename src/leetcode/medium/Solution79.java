@@ -10,7 +10,6 @@ public class Solution79 {
         }
         return false;
     }
-
     boolean findChar(String word, int x, int y, char[][] board, int index) {
 
         if (x < 0 || y < 0 || x > board.length - 1 || y > board[0].length - 1 || board[x][y] != word.charAt(index)) {
@@ -31,5 +30,4 @@ public class Solution79 {
         board[x][y] = temp;
         return false;
     }
-
 }

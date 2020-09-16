@@ -23,13 +23,41 @@ public class Main {
         main.solution82();
         main.asteroidCollision();
         main.combinationSum3();
-       * main.letterCasePermutation(); */
+        main.letterCasePermutation();
         main.solution79();
+        main.sumNumbers();*/
+        main.smallestFromLeaf();
     }
 
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
         System.out.println(sol.letterCasePermutation("a1b1"));
+    }
+
+    void sumNumbers() {
+        Solution129 sol = new Solution129();
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(9);
+        root.left.left = new TreeNode(5);
+        root.left.right = new TreeNode(1);
+        root.right = new TreeNode(0);
+        //root.left = new TreeNode(2);
+        System.out.println(sol.sumNumbers(root));
+
+    }
+
+    void smallestFromLeaf() {
+        Solution988 sol = new Solution988();
+        TreeNode root = new TreeNode(25);
+        root.left = new TreeNode(1);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);
+        root.right = new TreeNode(3);
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(2);
+        //root.left = new TreeNode(2);
+        System.out.println(sol.smallestFromLeaf(root));
+
     }
 
     void solution79() {
@@ -47,60 +75,72 @@ public class Main {
         System.out.println(sol.exist(board, word2));
         System.out.println(sol.exist(board, word3));
     }
+
     void combinationSum3() {
         Solution216 sol = new Solution216();
         System.out.println(sol.combinationSum3(3, 9));
     }
+
     void solution15() {
         Solution15 sol = new Solution15();
         int[] num = {-1, 0, 1, 2, -1, -4};
         System.out.println(sol.threeSum(num));
     }
+
     void solution1470() {
         Solution1470 sol = new Solution1470();
         int[] num = {-1, 0, 1, 2, -1, -4};
         System.out.println(Arrays.toString(sol.shuffle(num, 3)));
     }
+
     void solution442() {
         Solution442 sol = new Solution442();
         int[] num = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(sol.findDuplicates(num));
     }
+
     void solution448() {
         Solution448 sol = new Solution448();
         int[] num = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(sol.findDisappearedNumbers(num));
     }
+
     void solution605() {
         Solution605 sol = new Solution605();
         int[] num = {1, 0, 0, 0, 1};
         System.out.println(sol.canPlaceFlowers(num, 1));
     }
+
     void solution914() {
         Solution914 sol = new Solution914();
         int[] num = {1, 1, 1, 1, 2, 2, 2, 2, 2, 2};
         System.out.println(sol.hasGroupsSizeX(num));
     }
+
     void solution62() {
         Solution62 sol = new Solution62();
         int m = 4, n = 4;
         System.out.println(sol.uniquePaths(m, n));
     }
+
     void solution69() {
         Solution69 sol = new Solution69();
         int m = 4;
         System.out.println(sol.mySqrt(m));
     }
+
     void solution63() {
         Solution63 sol = new Solution63();
         int[][] obstacleGrid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
         System.out.println(sol.uniquePathsWithObstacles(obstacleGrid));
     }
+
     void mockWithEdith() {
         MockWithEdith sol = new MockWithEdith();
         String input = "12345 abcd";
         System.out.println(sol.myAtoi(input));
     }
+
     void solution82() {
         Solution82 sol = new Solution82();
         ListNode head = new ListNode(1);
@@ -111,6 +151,7 @@ public class Main {
         head.next.next.next.next.next = new ListNode(5);
         System.out.println(sol.deleteDuplicates(head));
     }
+
     void solution299() {
         Solution299 sol = new Solution299();
         String secret = "1123";
@@ -118,11 +159,13 @@ public class Main {
 
         System.out.println(sol.getHint(secret, guess));
     }
+
     void sortedArrayToBST() {
         SortedArrayToBST sol = new SortedArrayToBST();
         int[] num = {-10, -3, 0, 5, 9};
         System.out.println(sol.sortedArrayToBST(num).val);
     }
+
     void asteroidCollision() {
         Solution735 sol = new Solution735();
         int[] nums = {-2, -2, 1, -2};
