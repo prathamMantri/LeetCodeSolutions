@@ -11,22 +11,25 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         /*main.solution15();
-        main.solution62();
-        main.solution63();
-        main.solution1470();
-        main.solution914();
-        main.solution605();
-        main.mockWithEdith();
-        main.sortedArrayToBST();
-        main.solution299();
-        main.solution69();
-        main.solution82();
-        main.asteroidCollision();
-        main.combinationSum3();
-        main.letterCasePermutation();
-        main.solution79();
-        main.sumNumbers();*/
-        main.smallestFromLeaf();
+        //main.solution62();
+        //main.solution63();
+        //main.solution1470();
+        //main.solution914();
+        //main.solution605();
+        //main.mockWithEdith();
+        //main.sortedArrayToBST();
+        //main.solution299();
+        //main.solution69();
+        //main.solution82();
+        //main.asteroidCollision();
+        //main.combinationSum3();
+        //main.letterCasePermutation();
+        //main.solution79();
+        //main.sumNumbers();
+        //main.combinationSum();*/
+        main.combinationSum2();
+        //main.combinationSum3();
+        //main.smallestFromLeaf();
     }
 
     void letterCasePermutation() {
@@ -74,6 +77,18 @@ public class Main {
         System.out.println(sol.exist(board, word1));
         System.out.println(sol.exist(board, word2));
         System.out.println(sol.exist(board, word3));
+    }
+
+    void combinationSum() {
+        Solution39 sol = new Solution39();
+        int[] candidates = {2, 3, 6, 7};
+        System.out.println(sol.combinationSum(candidates, 7));
+    }
+
+    void combinationSum2() {
+        Solution40 sol = new Solution40();
+        int[] candidates = {10, 1, 2, 7, 6, 1, 5};
+        System.out.println(sol.combinationSum2(candidates, 8));
     }
 
     void combinationSum3() {
