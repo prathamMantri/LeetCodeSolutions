@@ -1,6 +1,7 @@
 package leetcode.medium;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution47 {
@@ -12,6 +13,7 @@ public class Solution47 {
         boolean[] visited = new boolean[nums.length];
         List<List<Integer>> results = new ArrayList<>();
         List<Integer> result = new ArrayList<>();
+        Arrays.sort(nums);
         helper(results, result, visited, nums);
         return results;
     }
@@ -26,6 +28,7 @@ public class Solution47 {
             if (visited[i]) {
                 continue;
             }
+            if (i > 0 && nums[i - 1] == nums[i] && !visited[i - 1]) continue;
             visited[i] = true;
             result.add(nums[i]);
             helper(results, result, visited, nums);

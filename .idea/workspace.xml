@@ -2,16 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd1c73d-641f-4d54-95a5-eea5cb45997d" name="Default Changelist" comment="P-12345: More solutions">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/Solution125.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/Solution70.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/medium/Solution779.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/Solution131.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/Solution46.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/Solution47.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/Solution1450.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/medium/Solution131.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/medium/Solution77.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amazon_interview_questions/AmazonVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_amazon/AmazonVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amazon_interview_questions/ClosestLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_amazon/ClosestLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amazon_interview_questions/PairInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_amazon/PairInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/BalanceBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/BalanceBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/ContiguousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/ContiguousSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/EncryptedWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/EncryptedWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/MatchingPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/MatchingPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/MinimumLengthSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/MinimumLengthSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/NumberOfVisibleNodesFromLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/NumberOfVisibleNodesFromLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/QueueRemovals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/QueueRemovals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/ReverseOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/ReverseOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/ReverseToMakeEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/ReverseToMakeEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facebook_interview_questions/RotationalCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_facebook/RotationalCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/medium/Solution46.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/medium/Solution46.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/medium/Solution47.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/medium/Solution47.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/DaysOfWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/DaysOfWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/LongestSemiAlteringSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/LongestSemiAlteringSubString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/LongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/LongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/MakeMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/MakeMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/MaxInserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/MaxInserts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/MaxPossibleValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/MaxPossibleValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/MinimumMoves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/MinimumMoves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/NumbersWithEqualDigitSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/NumbersWithEqualDigitSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/PairOfPositiveNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/PairOfPositiveNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/PilesManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/PilesManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/RedWhiteBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/RedWhiteBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/StringWithout3Identical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/StringWithout3Identical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/microsoft_interview_questions/UniqueFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_questions_microsoft/UniqueFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mockinterviews/MockTestQ1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock_interviews/MockTestQ1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mockinterviews/MockTestQ2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock_interviews/MockTestQ2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mockinterviews/MockWithEdith.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock_interviews/MockWithEdith.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mockinterviews/MockWithRoshan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock_interviews/MockWithRoshan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mockinterviews/SortedArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock_interviews/SortedArrayToBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/BackspaceStringCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/BackspaceStringCompare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/ContiguousArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/ContiguousArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/CountingElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/CountingElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/HappyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/MaximumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/MiddleOfLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/MiddleOfLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/MoveZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/MoveZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/PerformStringShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/PerformStringShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/ProductExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/ProductExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monthlyChallange/SingleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monthly_challange/SingleNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/AddOneToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/AddOneToArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/Bulb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/Bulb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/CommonNumbersInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/CommonNumbersInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/ConcatAB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/ConcatAB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/FindMaxAccuranceArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/FindMaxAccuranceArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/KadaneAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/KadaneAlgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/Knapsack01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/Knapsack01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/OneAwayString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/OneAwayString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/Sort012.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/Sort012.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomprograms/nthSmallestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_programs/nthSmallestElement.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="235" />
@@ -38,12 +101,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1WGSGzzrMBI8eWXw0bjfYIbKDcQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Solution43&#9;FILE&#9;file://C:/PersonalProjects/LeetCodeSolutions/src/medium/Solution43.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -58,102 +132,56 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="backtracking" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PersonalProjects\LeetCodeSolutions\src\RandomPrograms" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Solution125">
-    <configuration name="ClimbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.ClimbStairs" />
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Main" />
       <module name="LeetCodeSolution" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="recursion.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibbonacciNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.FibbonacciNumber" />
-      <module name="LeetCodeSolution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="model.Main" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.ReverseLinkedList" />
-      <module name="LeetCodeSolution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution125" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.easy.Solution125" />
-      <module name="LeetCodeSolution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution779" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.medium.Solution779" />
-      <module name="LeetCodeSolution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.ReverseLinkedList" />
-      <item itemvalue="Application.FibbonacciNumber" />
-      <item itemvalue="Application.ClimbStairs" />
-      <item itemvalue="Application.Solution779" />
-      <item itemvalue="Application.Solution125" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution125" />
-        <item itemvalue="Application.Solution779" />
-        <item itemvalue="Application.ClimbStairs" />
-        <item itemvalue="Application.FibbonacciNumber" />
-        <item itemvalue="Application.ReverseLinkedList" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +250,9 @@
       <workItem from="1581645980550" duration="2533000" />
       <workItem from="1581699053029" duration="726000" />
       <workItem from="1581790294815" duration="18219000" />
+      <workItem from="1600398185581" duration="1591000" />
+      <workItem from="1600460835040" duration="340000" />
+      <workItem from="1600480410953" duration="5984000" />
     </task>
     <task id="LOCAL-00001" summary="Deleting unnecessary files">
       <created>1552188664402</created>
@@ -465,7 +496,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
@@ -485,13 +516,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -523,6 +553,52 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2330" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600398240001">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state x="2330" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600398240001" />
+    <state x="2543" y="269" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600398235302">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="269" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600398235302" />
+    <state width="421" height="546" key="DebuggerActiveHint" timestamp="1600484985711">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="421" height="546" key="DebuggerActiveHint/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600484985711" />
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom" timestamp="1600490277313">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600490277313" />
+    <state width="1867" height="267" key="GridCell.Tab.0.center" timestamp="1600490277312">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.center/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600490277312" />
+    <state width="1867" height="267" key="GridCell.Tab.0.left" timestamp="1600490277312">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.left/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600490277312" />
+    <state width="1867" height="267" key="GridCell.Tab.0.right" timestamp="1600490277312">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.right/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600490277312" />
+    <state width="1867" height="323" key="GridCell.Tab.1.bottom" timestamp="1600489381955">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="323" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600489381955" />
+    <state width="1867" height="323" key="GridCell.Tab.1.center" timestamp="1600489381955">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="323" key="GridCell.Tab.1.center/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600489381955" />
+    <state width="1867" height="323" key="GridCell.Tab.1.left" timestamp="1600489381955">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="323" key="GridCell.Tab.1.left/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600489381955" />
+    <state width="1867" height="323" key="GridCell.Tab.1.right" timestamp="1600489381955">
+      <screen x="1920" y="10" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="323" key="GridCell.Tab.1.right/0.0.1536.824/1920.10.1920.1040@1920.10.1920.1040" timestamp="1600489381955" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,7 +729,7 @@
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Math.java</url>
+          <url>jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Math.java</url>
           <line>338</line>
           <option name="timeStamp" value="218" />
         </line-breakpoint>
@@ -1101,6 +1177,31 @@
           <url>file://$PROJECT_DIR$/src/leetcode/easy/Solution125.java</url>
           <line>15</line>
           <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/medium/Solution77.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/medium/Solution77.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/medium/Solution77.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/medium/Solution77.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/medium/Solution77.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="473" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/recursion/ReverseLinkedList.java</url>

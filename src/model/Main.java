@@ -2,8 +2,8 @@ package model;
 
 import leetcode.easy.*;
 import leetcode.medium.*;
-import mockinterviews.MockWithEdith;
-import mockinterviews.SortedArrayToBST;
+import mock_interviews.MockWithEdith;
+import mock_interviews.SortedArrayToBST;
 
 import java.util.Arrays;
 
@@ -27,9 +27,10 @@ public class Main {
         //main.solution79();
         //main.sumNumbers();
         //main.combinationSum();*/
-        main.combinationSum2();
+        //main.combinationSum2();
         //main.combinationSum3();
         //main.smallestFromLeaf();
+        main.combine();
     }
 
     void letterCasePermutation() {
@@ -94,6 +95,11 @@ public class Main {
     void combinationSum3() {
         Solution216 sol = new Solution216();
         System.out.println(sol.combinationSum3(3, 9));
+    }
+
+    void combine() {
+        Solution77 sol = new Solution77();
+        System.out.println(sol.combine(4, 2));
     }
 
     void solution15() {
