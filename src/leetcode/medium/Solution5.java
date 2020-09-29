@@ -2,10 +2,7 @@ package leetcode.medium;
 
 public class Solution5 {
 
-    public static void main(String[] args) {
-        Solution5 sol = new Solution5();
-        System.out.println(sol.longestPalindrome("abacdfgdcaba"));
-    }
+/*
 
     public String longestPalindrome(String s) {
         char[] chArr = s.toCharArray();
@@ -44,4 +41,33 @@ public class Solution5 {
         return ans.toString();
     }
 
+*/
+int st, en;
+
+    public static void main(String[] args) {
+        Solution5 sol = new Solution5();
+        System.out.println(sol.longestPalindrome("cbbd"));
+    }
+
+    public String longestPalindrome(String s) {
+        if (s.length() < 2) {
+            return s;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            expand(s, i, i);
+            expand(s, i, i + 1);
+        }
+        return s.substring(st + 1, en);
+    }
+
+    private void expand(String s, int start, int end) {
+        while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
+            start--;
+            end++;
+        }
+        if (en - st - 1 <= end - start - 1) {
+            st = start;
+            en = end;
+        }
+    }
 }

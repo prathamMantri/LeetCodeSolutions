@@ -4,7 +4,7 @@ import model.TrieNode;
 
 public class Solution208 {
 
-    private TrieNode root;
+    private final TrieNode root;
 
 
     /**
@@ -17,11 +17,11 @@ public class Solution208 {
     public static void main(String[] args) {
         Solution208 sol = new Solution208();
         sol.insert("apple");
-        sol.search("apple");
-        sol.search("app");
-        sol.startsWith("app");
+        System.out.println(sol.search("apple"));
+        System.out.println(sol.search("app"));
+        System.out.println(sol.startsWith("app"));
         sol.insert("app");
-        sol.search("app");
+        System.out.println(sol.search("app"));
     }
 
     /**
@@ -32,12 +32,11 @@ public class Solution208 {
         for (int i = 0; i < word.length(); i++) {
             char currentChar = word.charAt(i);
             if (!node.containsKey(currentChar)) {
-                node.put(currentChar, new TrieNode());
+                node.putNode(currentChar, new TrieNode());
             }
-            node = node.get(currentChar);
+            node = node.getNode(currentChar);
         }
         node.setEnd();
-        root = node;
     }
 
     /**
@@ -60,8 +59,8 @@ public class Solution208 {
         TrieNode node = root;
         for (int i = 0; i < word.length(); i++) {
             char currentChar = word.charAt(i);
-            if (root.containsKey(currentChar)) {
-                node = node.get(currentChar);
+            if (node.containsKey(currentChar)) {
+                node = node.getNode(currentChar);
             } else {
                 return null;
             }

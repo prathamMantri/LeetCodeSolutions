@@ -1,24 +1,36 @@
 package model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TrieNode {
-    private final int size = 26;
-    TrieNode[] links;
+
+    Map<Character, TrieNode> nodes;
     Boolean isEnd;
 
     public TrieNode() {
-        links = new TrieNode[size];
+        nodes = new HashMap<>();
+        isEnd = false;
     }
 
     public Boolean containsKey(char ch) {
-        return links[ch - 'a'] != null;
+        return nodes.get(ch) != null;
     }
 
-    public TrieNode get(char ch) {
-        return links[ch - 'a'];
+    public TrieNode getNode(char ch) {
+        return nodes.get(ch);
     }
 
-    public void put(char ch, TrieNode trieNode) {
-        links[ch - 'a'] = trieNode;
+    public void putNode(char ch, TrieNode trieNode) {
+        nodes.put(ch, trieNode);
+    }
+
+    public Map<Character, TrieNode> getNodes() {
+        return nodes;
+    }
+
+    public void setNodes(Map<Character, TrieNode> nodes) {
+        this.nodes = nodes;
     }
 
     public Boolean isEnd() {

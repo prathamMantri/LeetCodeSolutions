@@ -1,16 +1,14 @@
 package model;
 
-import leetcode.easy.*;
-import leetcode.medium.*;
-import mock_interviews.MockWithEdith;
-import mock_interviews.SortedArrayToBST;
-
-import java.util.Arrays;
+import leetcode.medium.Solution1023;
+import leetcode.medium.Solution1921;
+import leetcode.medium.Solution809;
+import leetcode.medium.Solution89;
 
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
-        /*main.solution15();
+        //main.solution15();
         //main.solution62();
         //main.solution63();
         //main.solution1470();
@@ -30,9 +28,26 @@ public class Main {
         //main.combinationSum2();
         //main.combinationSum3();
         //main.smallestFromLeaf();
-        main.combine();
+        //main.combine();
+        //main.wordDictionary();
+        //main.searchBST();
+        //main.countNumbersWithUniqueDigits();
+        //main.task1();
+        //main.task2();
+        //main.task3();
+        //main.task4();
+        //main.longestSubarray();
+        //main.validateStackSequences();
+        //main.maxDistance();
+        //main.isNStraightHand();
+        //main.isPossible();
+        //main.expressiveWords();
+        //main.camelMatch();
+        //main.getMaximumGold();
+        main.grayCode();
     }
 
+    /*
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
         System.out.println(sol.letterCasePermutation("a1b1"));
@@ -208,4 +223,142 @@ public class Main {
         System.out.println(Arrays.toString(sol.asteroidCollision(nums7)));
         System.out.println(Arrays.toString(sol.asteroidCollision(nums8)));
     }
+
+    void wordDictionary() {
+        Solution211.WordDictionary wordDictionary = new Solution211.WordDictionary();
+        wordDictionary.addWord("a");
+        wordDictionary.addWord("a");
+        System.out.println(wordDictionary.search("."));
+        System.out.println(wordDictionary.search("a"));
+        System.out.println(wordDictionary.search("aa"));
+        System.out.println(wordDictionary.search("a"));
+        System.out.println(wordDictionary.search(".a"));
+        System.out.println(wordDictionary.search("a."));
+    }
+
+    void searchBST() {
+        Solution700 sol = new Solution700();
+        TreeNode root = new TreeNode(4,
+                new TreeNode(2,
+                        new TreeNode(1,
+                                null,
+                                null),
+                        new TreeNode(3,
+                                null,
+                                null)),
+                new TreeNode(7, null, null));
+        /*root.left = new TreeNode(2);
+        root.right = new TreeNode(7);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);*/
+    /*
+        System.out.println(sol.searchBST(root, 2).val);
+
+    }
+
+    void countNumbersWithUniqueDigits() {
+        Solution357 sol = new Solution357();
+        System.out.println(sol.countNumbersWithUniqueDigits(3));
+    }
+
+    void task1() {
+        Task1 task = new Task1();
+        task.solution();
+    }
+
+    void task2() {
+        Task2 task = new Task2();
+        System.out.println(task.solution("aabbccddeeeaa"));
+    }
+
+    void task3() {
+        Task3 task = new Task3();
+        System.out.println(task.solution("id,name,age,score\n1,Jack,NULL,12\n17,Betty,28,11"));
+    }
+
+    void task4() {
+        Task4 task = new Task4();
+        System.out.println(task.solution("715K 2009-09-23 system.zip~\n" +
+                " 179K 2013-08-14 to-do-list.xml~\n" +
+                " 645K 2013-06-19 blockbuster.mpeg~\n" +
+                "  536 2010-12-12 notes.html\n" +
+                " 688M 1990-02-11 delete-this.zip~\n" +
+                "  23K 1987-05-24 setup.png~\n" +
+                " 616M 1965-06-06 important.html\n" +
+                "  14M 1992-05-31 crucial-module.java~\n" +
+                " 192K 1990-01-31 very-long-filename.dll~"));
+    }
+
+    void longestSubarray() {
+        Solution1438 sol = new Solution1438();
+        int[] arr = {1,1,1,1,1,1,1,1,1,1,1,};
+        int limit = 10;
+        System.out.println(sol.longestSubarray(arr, limit));
+    }
+
+    void validateStackSequences(){
+        Solution946 sol = new Solution946();
+        int[] pushed = {2,1,0};
+        int[] popped = {1,2,0};
+        System.out.println(sol.validateStackSequences(pushed, popped));
+    }
+
+    void maxDistance() {
+
+        Solution624 sol = new Solution624();
+        List<Integer> array1 = new ArrayList<>();
+        array1.add(1);
+        array1.add(2);
+        array1.add(3);
+        List<Integer> array2 = new ArrayList<>();
+        array2.add(4);
+        array2.add(5);
+        List<Integer> array3 = new ArrayList<>();
+        array3.add(1);
+        array3.add(2);
+        array3.add(3);
+        List<List<Integer>> arrays = new ArrayList<>();
+        arrays.add(array1);
+        arrays.add(array2);
+        arrays.add(array3);
+        sol.maxDistance(arrays);
+    }
+
+    void isNStraightHand(){
+        Solution846 sol = new Solution846();
+        int[] hand = {1,2,3,6,2,3,4,7,8};
+        System.out.println(sol.isNStraightHand(hand, 3));
+    }
+
+
+    void isPossible(){
+        Solution659 sol = new Solution659();
+        int[] hand = {1,2,3,3,4,5};
+        System.out.println(sol.isPossible(hand));
+    }
+    */
+    void expressiveWords() {
+        Solution809 sol = new Solution809();
+        String[] words = {"hello", "hi", "helo"};
+        System.out.println(sol.expressiveWords("heeellooo", words));
+    }
+
+    void camelMatch() {
+        Solution1023 sol = new Solution1023();
+        String[] queries = {"mifeqvzphnrv", "mieqxvrvhnrv", "mhieqovhnryv", "mieqekvhnrpv", "miueqrvfhnrv", "mieqpvhzntrv", "gmimeqvphnrv", "mieqvhqyunrv"};
+        String pattern = "mieqvhnrv";
+        System.out.println(sol.camelMatch(queries, pattern));
+    }
+
+    void getMaximumGold() {
+        Solution1921 sol = new Solution1921();
+        int[][] grid = {{0, 6, 0}, {5, 8, 7}, {0, 9, 0}};
+        sol.getMaximumGold(grid);
+    }
+
+    void grayCode() {
+        Solution89 sol = new Solution89();
+        System.out.println(sol.grayCode(2));
+    }
+
 }
