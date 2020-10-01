@@ -1,9 +1,7 @@
 package model;
 
-import leetcode.medium.Solution1023;
-import leetcode.medium.Solution1921;
-import leetcode.medium.Solution809;
-import leetcode.medium.Solution89;
+import leetcode.easy.Solution198;
+import leetcode.medium.Solution713;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,9 +42,11 @@ public class Main {
         //main.expressiveWords();
         //main.camelMatch();
         //main.getMaximumGold();
-        main.grayCode();
+        //main.grayCode();
+        //main.findWords();
+        // main.rob();
+        main.numSubarrayProductLessThanK();
     }
-
     /*
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
@@ -250,8 +250,8 @@ public class Main {
         /*root.left = new TreeNode(2);
         root.right = new TreeNode(7);
         root.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);*/
-    /*
+        root.left.right = new TreeNode(3);
+
         System.out.println(sol.searchBST(root, 2).val);
 
     }
@@ -336,7 +336,7 @@ public class Main {
         int[] hand = {1,2,3,3,4,5};
         System.out.println(sol.isPossible(hand));
     }
-    */
+
     void expressiveWords() {
         Solution809 sol = new Solution809();
         String[] words = {"hello", "hi", "helo"};
@@ -360,5 +360,39 @@ public class Main {
         Solution89 sol = new Solution89();
         System.out.println(sol.grayCode(2));
     }
+
+    void findWords() {
+        Solution212 sol = new Solution212();
+
+        char[][] board = {
+                {'o','a','a','n'},
+                {'e','t','a','e'},
+                {'i','h','k','r'},
+                {'i','f','l','v'}
+        };
+        char[][] board = {
+                {'a','a'}
+        };
+        String word1 = "aa";
+        String[] words = {word1};
+       // System.out.println(sol.findWords(board, words));
+        System.out.println(sol.findWordsUsingTrie(board, words));
+    }
+    */
+
+    void rob() {
+        Solution198 sol = new Solution198();
+        int[] nums = {2, 1, 1, 4, 1, 1, 6};
+        //             2        1       3       6       6       7       12
+
+        System.out.println(sol.rob(nums));
+    }
+
+    void numSubarrayProductLessThanK() {
+        Solution713 sol = new Solution713();
+        int[] nums = {10, 5, 2, 6};
+        sol.numSubarrayProductLessThanK(nums, 100);
+    }
+
 
 }
