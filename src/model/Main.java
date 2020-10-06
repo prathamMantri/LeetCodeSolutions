@@ -1,7 +1,6 @@
 package model;
 
-import leetcode.easy.Solution198;
-import leetcode.medium.Solution713;
+import leetcode.medium.Solution722;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,7 +44,16 @@ public class Main {
         //main.grayCode();
         //main.findWords();
         // main.rob();
-        main.numSubarrayProductLessThanK();
+        //main.numSubarrayProductLessThanK();
+        //main.licenseKeyFormatting();
+        //main.shortestPalindrome();
+        //main.wordBreak();
+        //main.specialArray();
+        //main.isEvenOddTree();
+        //main.subArray();
+        //main.basicCalculator();
+        //main.decodeString();
+        main.removeComments();
     }
     /*
     void letterCasePermutation() {
@@ -235,7 +243,6 @@ public class Main {
         System.out.println(wordDictionary.search(".a"));
         System.out.println(wordDictionary.search("a."));
     }
-
     void searchBST() {
         Solution700 sol = new Solution700();
         TreeNode root = new TreeNode(4,
@@ -255,27 +262,22 @@ public class Main {
         System.out.println(sol.searchBST(root, 2).val);
 
     }
-
     void countNumbersWithUniqueDigits() {
         Solution357 sol = new Solution357();
         System.out.println(sol.countNumbersWithUniqueDigits(3));
     }
-
     void task1() {
         Task1 task = new Task1();
         task.solution();
     }
-
     void task2() {
         Task2 task = new Task2();
         System.out.println(task.solution("aabbccddeeeaa"));
     }
-
     void task3() {
         Task3 task = new Task3();
         System.out.println(task.solution("id,name,age,score\n1,Jack,NULL,12\n17,Betty,28,11"));
     }
-
     void task4() {
         Task4 task = new Task4();
         System.out.println(task.solution("715K 2009-09-23 system.zip~\n" +
@@ -288,23 +290,19 @@ public class Main {
                 "  14M 1992-05-31 crucial-module.java~\n" +
                 " 192K 1990-01-31 very-long-filename.dll~"));
     }
-
     void longestSubarray() {
         Solution1438 sol = new Solution1438();
         int[] arr = {1,1,1,1,1,1,1,1,1,1,1,};
         int limit = 10;
         System.out.println(sol.longestSubarray(arr, limit));
     }
-
     void validateStackSequences(){
         Solution946 sol = new Solution946();
         int[] pushed = {2,1,0};
         int[] popped = {1,2,0};
         System.out.println(sol.validateStackSequences(pushed, popped));
     }
-
     void maxDistance() {
-
         Solution624 sol = new Solution624();
         List<Integer> array1 = new ArrayList<>();
         array1.add(1);
@@ -323,47 +321,38 @@ public class Main {
         arrays.add(array3);
         sol.maxDistance(arrays);
     }
-
     void isNStraightHand(){
         Solution846 sol = new Solution846();
         int[] hand = {1,2,3,6,2,3,4,7,8};
         System.out.println(sol.isNStraightHand(hand, 3));
     }
-
-
     void isPossible(){
         Solution659 sol = new Solution659();
         int[] hand = {1,2,3,3,4,5};
         System.out.println(sol.isPossible(hand));
     }
-
     void expressiveWords() {
         Solution809 sol = new Solution809();
         String[] words = {"hello", "hi", "helo"};
         System.out.println(sol.expressiveWords("heeellooo", words));
     }
-
     void camelMatch() {
         Solution1023 sol = new Solution1023();
         String[] queries = {"mifeqvzphnrv", "mieqxvrvhnrv", "mhieqovhnryv", "mieqekvhnrpv", "miueqrvfhnrv", "mieqpvhzntrv", "gmimeqvphnrv", "mieqvhqyunrv"};
         String pattern = "mieqvhnrv";
         System.out.println(sol.camelMatch(queries, pattern));
     }
-
     void getMaximumGold() {
         Solution1921 sol = new Solution1921();
         int[][] grid = {{0, 6, 0}, {5, 8, 7}, {0, 9, 0}};
         sol.getMaximumGold(grid);
     }
-
     void grayCode() {
         Solution89 sol = new Solution89();
         System.out.println(sol.grayCode(2));
     }
-
     void findWords() {
         Solution212 sol = new Solution212();
-
         char[][] board = {
                 {'o','a','a','n'},
                 {'e','t','a','e'},
@@ -378,8 +367,6 @@ public class Main {
        // System.out.println(sol.findWords(board, words));
         System.out.println(sol.findWordsUsingTrie(board, words));
     }
-    */
-
     void rob() {
         Solution198 sol = new Solution198();
         int[] nums = {2, 1, 1, 4, 1, 1, 6};
@@ -387,11 +374,77 @@ public class Main {
 
         System.out.println(sol.rob(nums));
     }
-
     void numSubarrayProductLessThanK() {
         Solution713 sol = new Solution713();
         int[] nums = {10, 5, 2, 6};
         sol.numSubarrayProductLessThanK(nums, 100);
+    }
+    void licenseKeyFormatting(){
+        Solution482 sol = new Solution482();
+        System.out.println(sol.licenseKeyFormatting("5F3Z-2e-9-w", 0));
+    }
+    void shortestPalindrome(){
+        Solution214 sol = new Solution214();
+        System.out.println(sol.shortestPalindrome("aacecaaa"));
+    }
+    void wordBreak(){
+        Solution139 sol = new Solution139();
+        List<String> wordDict = new ArrayList<>();
+        wordDict.add("cats");
+        wordDict.add("dog");
+        wordDict.add("sand");
+        wordDict.add("and");
+        wordDict.add("cat");
+        wordDict.add("an");
+        System.out.println(sol.wordBreak("catsandogcat", wordDict));
+    }
+
+    void specialArray(){
+
+        Solution5531 sol = new Solution5531();
+        int[] nums = {0,4,3,0,4};
+        System.out.println(sol.specialArrayBest(nums));
+    }
+    void isEvenOddTree(){
+        Solution1609 sol = new Solution1609();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(10);
+        root.left.left = new TreeNode(3);
+        root.left.left.left = new TreeNode(12);
+        root.left.left.right = new TreeNode(8);
+        root.right = new TreeNode(4);
+        root.right.left = new TreeNode(7);
+        root.right.right = new TreeNode(9);
+        root.right.right.right = new TreeNode(2);
+        root.right.left.left= new TreeNode(6);
+        System.out.println(sol.isEvenOddTree(root));
+    }
+    void subArray() {
+        Solution560 sol = new Solution560();
+        int[] a = {1, 2, 1, 3, 0, 5, -2};
+        sol.subarraySum(a, 3);
+    }
+    void decodeString(){
+        Solution394 sol = new Solution394();
+        // System.out.println(sol.decodeString("3[a]2[bc]"));
+        System.out.println(sol.decodeString("3[a2[c]]")); //accaccacc
+    }
+
+    void basicCalculator(){
+        Solution224 sol = new Solution224();
+        System.out.println(sol.calculate("1 + 1"));
+    }
+    */
+    void removeComments() {
+        Solution722 sol = new Solution722();
+        //String[] code = {"void func(int k) {", "// this function does nothing /*", "   k = k*2/4;", "   k = k/2;*/", "}"};
+        String[] code = {"a//*b//*c", "blank", "d*//e*//f"};
+
+        //String[] code = {"a/*comment", "line", "more_comment*/b"};
+        //String[] code = {"struct Node{", "    /*/ declare members;/**/", "    int size;", "    /**/int val;", "};"};
+        //String[] code = {"/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"};
+
+        System.out.println(sol.removeComments(code));
     }
 
 

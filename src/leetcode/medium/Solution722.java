@@ -4,18 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution722 {
-    public static void main(String[] args) {
-        Solution722 sol = new Solution722();
-        //String[] code = {"void func(int k) {", "// this function does nothing /*", "   k = k*2/4;", "   k = k/2;*/", "}"};
-        String[] code = {"main() {", "   func(1);", "   /** / more comments here", "   float f = 2.0", "   f += f;", "   cout << f; */", "}"};
-        //String[] code = {"a/*comment", "line", "more_comment*/b"};
-        //String[] code = {"struct Node{", "    /*/ declare members;/**/", "    int size;", "    /**/int val;", "};"};
-        //String[] code = {"/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"};
 
-        System.out.println(sol.removeComments(code));
-    }
-
-    public List<String> removeComments(String[] code) {
+    public List<String> removeCommentsOld(String[] code) {
         if (code == null || code.length == 0) {
             return null;
         }
@@ -66,6 +56,86 @@ public class Solution722 {
             line = false;
         }
         return res;
+    }
+  /*  public List<String> removeComments(String[] code){
+
+        boolean singleLine = false;
+        boolean multiLine = false;
+
+        StringBuilder res;
+        List<String> result = new ArrayList<>();
+
+        for(int i=0; i<code.length; i++){
+            res = new StringBuilder();
+            String line = code[i];
+            int j=0;
+            while(j<line.length()-1){
+                if(singleLine)
+                    break;
+                char current = line.charAt(j);
+                char next = line.charAt(++j);
+                if(!singleLine && !multiLine){
+                    if(current == '/'){
+                        if(next == '/')
+                            singleLine = true;
+                        else if(next == '*')
+                            multiLine = true;
+                        else{
+                            res.append(current);
+                        }
+                    }else{
+                        res.append(current);
+                    }
+                }else if(multiLine){
+                    if(current == '*'){
+                        if(next == '/'){
+                            multiLine = false;
+                        }
+                    }
+                }
+                if(!singleLine && !multiLine && j==line.length()-1){
+                    if(current == '*' && next == '/')
+                        res.append("");
+                    else
+                        res.append(next);
+                }
+            }
+            singleLine = false;
+            result.add(res.toString());
+        }
+        return result;
+    }*/
+
+
+    // Official Solution from Leetcode
+
+    public List<String> removeComments(String[] source) {
+        boolean inBlock = false;
+        StringBuilder newline = new StringBuilder();
+        List<String> ans = new ArrayList();
+        for (String line : source) {
+            int i = 0;
+            char[] chars = line.toCharArray();
+            if (!inBlock) newline = new StringBuilder();
+            while (i < line.length()) {
+                if (!inBlock && i + 1 < line.length() && chars[i] == '/' && chars[i + 1] == '*') {
+                    inBlock = true;
+                    i++;
+                } else if (inBlock && i + 1 < line.length() && chars[i] == '*' && chars[i + 1] == '/') {
+                    inBlock = false;
+                    i++;
+                } else if (!inBlock && i + 1 < line.length() && chars[i] == '/' && chars[i + 1] == '/') {
+                    break;
+                } else if (!inBlock) {
+                    newline.append(chars[i]);
+                }
+                i++;
+            }
+            if (!inBlock && newline.length() > 0) {
+                ans.add(new String(newline));
+            }
+        }
+        return ans;
     }
 
 
