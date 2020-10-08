@@ -1,6 +1,6 @@
 package model;
 
-import leetcode.medium.Solution722;
+import leetcode.easy.Solution724;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,8 +53,19 @@ public class Main {
         //main.subArray();
         //main.basicCalculator();
         //main.decodeString();
-        main.removeComments();
+        //main.removeComments();
+        //main.longestStrChain();
+        //main.missingElement();
+        //main.firstMissingPositive();
+        //main.findDisappearedNumbers();
+        //main.numDecodings();
+        //main.getImportance();
+        //main.maxScore();
+        //main.highFive();
+        main.pivotSum();
+
     }
+
     /*
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
@@ -434,18 +445,84 @@ public class Main {
         Solution224 sol = new Solution224();
         System.out.println(sol.calculate("1 + 1"));
     }
-    */
+
     void removeComments() {
         Solution722 sol = new Solution722();
-        //String[] code = {"void func(int k) {", "// this function does nothing /*", "   k = k*2/4;", "   k = k/2;*/", "}"};
-        String[] code = {"a//*b//*c", "blank", "d*//e*//f"};
+        //String[] code = {"void func(int k) {", "// this function does nothing /*", "   k = k*2/4;", "   k = k/2;", "}"};
 
-        //String[] code = {"a/*comment", "line", "more_comment*/b"};
-        //String[] code = {"struct Node{", "    /*/ declare members;/**/", "    int size;", "    /**/int val;", "};"};
-        //String[] code = {"/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"};
 
         System.out.println(sol.removeComments(code));
     }
 
+    void longestStrChain(){
+        Solution1048 sol = new Solution1048();
+        String[] str = {"a","b","ba","abc","bda","bdca"};
+        System.out.println(sol.longestStrChain(str));
+    }
+
+    void missingElement(){
+        Solution1060 sol = new Solution1060();
+        int[] nums = {4,7,9,10};
+        System.out.println(sol.missingElement(nums, 1));
+
+    }
+    void firstMissingPositive(){
+        Solution41 solution41 = new Solution41();
+        int[] nums = {1,3,3};
+        System.out.println(solution41.firstMissingPositive(nums));
+    }
+
+    void findDisappearedNumbers(){
+        Solution448 sol = new Solution448();
+        int[] nums = {4,3,2,7,8,2,3,1};
+        System.out.println(sol.findDisappearedNumbers(nums));
+    }
+    void numDecodings(){
+        Solution91 sol = new Solution91();
+        System.out.println(sol.numDecodings("3251"));
+    }
+
+
+    void getImportance() {
+
+        List<Solution690.Employee> employees = new ArrayList<>();
+        List<Integer> nums1 = new ArrayList<>();
+        nums1.add(2);
+        nums1.add(3);
+
+        Solution690.Employee employee1 = new Solution690.Employee(1, 5, nums1);
+        Solution690.Employee employee2 = new Solution690.Employee(2, 3, new ArrayList<>());
+        Solution690.Employee employee3 = new Solution690.Employee(3, 3, new ArrayList<>());
+
+        employees.add(employee1);
+        employees.add(employee2);
+        employees.add(employee3);
+
+        Solution690 sol = new Solution690();
+        System.out.println(sol.getImportance(employees, 1));
+    }
+
+
+    void maxScore(){
+        Solution1423 sol = new Solution1423();
+        int nums[] = {1,2,3,4,5,6,1};
+        int k=3;
+        System.out.println(sol.maxScore(nums, k));
+    }
+
+    void highFive() {
+        Solution1086 sol = new Solution1086();
+        int[][] items = {{1, 91}, {1, 92}, {2, 93}, {2, 97}, {1, 60}, {2, 77}, {1, 65}, {1, 87}, {1, 100}, {2, 100}, {2, 76}};
+        //int[][] items = {{1,91},{1,92},{2,93},{2,97},{2,77},{1,65},{2,100},{2,76}};
+        System.out.println(Arrays.deepToString(sol.highFive(items)));
+    }
+    */
+
+    void pivotSum() {
+        Solution724 sol = new Solution724();
+        int[] nums = {1, 7, 3, 6, 5, 6};
+        System.out.println(sol.pivotIndex(nums));
+
+    }
 
 }

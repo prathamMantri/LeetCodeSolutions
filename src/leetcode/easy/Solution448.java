@@ -8,24 +8,20 @@ public class Solution448 {
         if(nums.length==1){
             return null;
         }
-
         List<Integer> res= new ArrayList<>();
-
         for(int i=0; i<nums.length; i++){
             int temp = nums[nums[i]-1];
             nums[nums[i]-1] = nums[i];
             nums[i] = temp;
         }
-
         for(int i=0; i<nums.length; i++){
-
             if(nums[i] != i+1){
                 res.add(i+1);
             }
         }
         return res;
     }*/
-    public List<Integer> findDisappearedNumbers(int[] nums) {
+    /*public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             res.add(i + 1);
@@ -35,7 +31,20 @@ public class Solution448 {
                 res.remove((Integer) num);
         }
         return res;
-    }
-
+    }*/
     //Pre-filling the result list will be considered as O(n) space? If not, introducing Java Solution
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            int index = nums[i];
+            if (nums[Math.abs(index) - 1] > 0)
+                nums[Math.abs(index) - 1] = -nums[Math.abs(index) - 1];
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                res.add(i + 1);
+            }
+        }
+        return res;
+    }
 }
