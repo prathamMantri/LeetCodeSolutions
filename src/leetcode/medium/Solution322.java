@@ -3,13 +3,6 @@ package leetcode.medium;
 import java.util.Arrays;
 
 public class Solution322 {
-    public static void main(String[] args) {
-        Solution322 sol = new Solution322();
-        int[] coins = {1, 3, 5};
-        sol.coinChange(coins, 11);
-
-
-    }
 
     public int coinChange(int[] coins, int amount) {
         int max = amount + 1;

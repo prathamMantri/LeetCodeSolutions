@@ -1,6 +1,7 @@
 package model;
 
-import leetcode.easy.Solution724;
+import leetcode.hard.Solution312;
+import leetcode.medium.Solution322;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,8 +63,13 @@ public class Main {
         //main.getImportance();
         //main.maxScore();
         //main.highFive();
-        main.pivotSum();
-
+        //main.pivotSum();
+        //main.randomPick();
+        //main.longestPalindromeSubSeq();
+        //main.countSubstrings();
+        //nain.longestValidParentheses();
+        //main.matchRegex();
+        main.maxCoin();
     }
 
     /*
@@ -516,13 +522,55 @@ public class Main {
         //int[][] items = {{1,91},{1,92},{2,93},{2,97},{2,77},{1,65},{2,100},{2,76}};
         System.out.println(Arrays.deepToString(sol.highFive(items)));
     }
-    */
 
     void pivotSum() {
         Solution724 sol = new Solution724();
         int[] nums = {1, 7, 3, 6, 5, 6};
         System.out.println(sol.pivotIndex(nums));
+    }
 
+    void randomPick() {
+        Solution528 sol = new Solution528();
+        int[] nums = {1, 7, 3, 6, 5, 6};
+        Solution528.RandomPick rp = new Solution528.RandomPick(nums);
+        System.out.println(rp.pickIndex());
+        System.out.println(rp.pickIndex());
+        System.out.println(rp.pickIndex());
+        System.out.println(rp.pickIndex());
+        System.out.println(rp.pickIndex());
+    }
+
+    void longestPalindromeSubSeq(){
+        Solution516 sol = new Solution516();
+        System.out.println(sol.longestPalindromeSubSeq("bbbbab"));
+    }
+    void countSubstrings(){
+        Solution647 sol = new Solution647();
+        System.out.println(sol.countSubstrings("abbac"));
+    }
+
+    void longestValidParentheses(){
+        Solution32 sol = new Solution32();
+        System.out.println(sol.longestValidParentheses("(((()))()()(()())))"));
+    }
+
+
+    void matchRegex(){
+        Solution10 sol = new Solution10();
+        sol.matchRegex("aa", "*a");
+    }
+    */
+
+    void maxCoin() {
+        Solution312 sol = new Solution312();
+        int[] nums = {3, 1, 5, 8};
+        sol.maxCoins(nums);
+    }
+
+    void coinChange() {
+        Solution322 sol = new Solution322();
+        int[] coins = {1, 3, 5};
+        sol.coinChange(coins, 11);
     }
 
 }
