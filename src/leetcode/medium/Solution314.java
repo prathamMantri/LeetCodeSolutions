@@ -22,9 +22,7 @@ public class Solution314 {
 
 
     }
-
     public List<List<Integer>> verticalOrder(TreeNode root) {
-
 
         List<List<Integer>> res = new ArrayList<>();
 
@@ -38,19 +36,19 @@ public class Solution314 {
         list.add(root.val);
         map.put(index, list);
 
-        verticalOrder(root.left, map, index + 1);
-        verticalOrder(root.right, map, index - 1);
+        verticalOrder(root.left, map, index + 1, true);
+        verticalOrder(root.right, map, index - 1, false);
 
         int count = map.size();
 
-        ArrayList<Integer> keys = new ArrayList<Integer>(map.keySet());
+        ArrayList<Integer> keys = new ArrayList<>(map.keySet());
         for (int i = keys.size() - 1; i >= 0; i--) {
             res.add(map.get(keys.get(i)));
         }
         return res;
     }
 
-    void verticalOrder(TreeNode node, Map<Integer, List<Integer>> map, int index) {
+    void verticalOrder(TreeNode node, Map<Integer, List<Integer>> map, int index, Boolean isLeft) {
 
         if (node == null)
             return;
@@ -59,20 +57,21 @@ public class Solution314 {
 
         if (map.containsKey(index)) {
             list = map.get(index);
-            if (index < 0) {
-                list.add(list.size() - 1, node.val);
+            if (index < 0 && !isLeft) {
+                list.add(node.val);
             } else {
-                list.add(list.size(), node.val);
+                list.add(node.val);
             }
+
+            // list.add(list.size(),node.val);
         } else {
             list = new ArrayList<>();
             list.add(0, node.val);
             map.put(index, list);
         }
-        verticalOrder(node.left, map, index + 1);
-        verticalOrder(node.right, map, index - 1);
+        verticalOrder(node.left, map, index + 1, true);
+        verticalOrder(node.right, map, index - 1, false);
 
     }
-
 
 }

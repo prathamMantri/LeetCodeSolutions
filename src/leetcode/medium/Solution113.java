@@ -35,7 +35,7 @@ class Solution113 {
             return;
         if (root.left == null && root.right == null && root.val == sum) {
             path.add(root.val);
-            paths.add(new ArrayList(path));
+            paths.add(new ArrayList<>(path));
         }
         path.add(root.val);
         getPath(paths, new ArrayList<Integer>(path), root.left, sum - root.val);

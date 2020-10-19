@@ -19,6 +19,29 @@ public class Solution347 {
     You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
     Your algorithm's time complexity must be better than O(n log n), where n is the array's size.*/
 
+    public int[] topKFrequentHeap(int[] nums, int k) {
+        int[] result = new int[k];
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
+        Map<Integer, Integer> numberCount = new HashMap<>();
+        for (Integer num : nums) {
+            numberCount.put(num, numberCount.getOrDefault(num, 0) + 1);
+        }
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> numberCount.get(a) - numberCount.get(b));
+        for (Integer num : numberCount.keySet()) {
+            maxHeap.add(num);
+            if (maxHeap.size() > k)
+                maxHeap.poll();
+        }
+        for (int i = k - 1; i >= 0; i--) {
+            result[i] = maxHeap.poll();
+        }
+        return result;
+    }
+
+    ///// do not use this
+
     public List<Integer> topKFrequent(int[] nums, int k) {
 
         Arrays.sort(nums);

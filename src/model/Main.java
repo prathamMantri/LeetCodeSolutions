@@ -1,7 +1,8 @@
 package model;
 
-import leetcode.hard.Solution312;
-import leetcode.medium.Solution322;
+import leetcode.medium.Solution19;
+import leetcode.medium.Solution347;
+import leetcode.medium.Solution692;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,7 +60,7 @@ public class Main {
         //main.missingElement();
         //main.firstMissingPositive();
         //main.findDisappearedNumbers();
-        //main.numDecodings();
+        //main.numDecoding();
         //main.getImportance();
         //main.maxScore();
         //main.highFive();
@@ -67,11 +68,30 @@ public class Main {
         //main.randomPick();
         //main.longestPalindromeSubSeq();
         //main.countSubstrings();
-        //nain.longestValidParentheses();
+        //main.longestValidParentheses();
         //main.matchRegex();
-        main.maxCoin();
+        //main.maxCoin();
+        //main.coinChange();
+        //main.checkSubarraySum();
+        //main.maxDepth();
+        //main.checkPalindromeFormation();
+        //main.maxSumTwoNoOverlap();
+        //main.minDominoRotations();
+        //main.wildMatch();
+        //main.canConvert();
+        //main.minCost();
+        //main.hasPathSum();
+        //main.serializeDeserialize();
+        //main.delNodesForest();
+        //main.binaryTreePaths();
+        //main.widthOfBinaryTree();
+        //main.distanceK();
+        //main.searchMatrix();
+        //main.parkingSystem();
+        //main.findMedianSortedArrays();
+        //main.removeNthFromEnd();
+        main.topKFrequent();
     }
-
     /*
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
@@ -559,7 +579,6 @@ public class Main {
         Solution10 sol = new Solution10();
         sol.matchRegex("aa", "*a");
     }
-    */
 
     void maxCoin() {
         Solution312 sol = new Solution312();
@@ -571,6 +590,168 @@ public class Main {
         Solution322 sol = new Solution322();
         int[] coins = {1, 3, 5};
         sol.coinChange(coins, 11);
+    }
+
+    void checkSubarraySum(){
+        Solution523 sol = new Solution523();
+        int[] coins = {0,1,0};
+        sol.checkSubarraySum(coins, 0);
+    }
+
+    void maxDepth(){
+        Solution1614 sol = new Solution1614();
+        System.out.println(sol.maxDepth("(1+(2*3)+((8)/4))+1"));
+    }
+
+    void checkPalindromeFormation(){
+        Solution1616 solution1616 = new Solution1616();
+        System.out.println(solution1616.checkPalindromeFormation("cdeoo", "oooab"));
+    }
+
+    void maxSumTwoNoOverlap(){
+        Solution1031 sol = new Solution1031();
+        int[] nums= {3,8,1,3,2,1,8,9,0};
+        System.out.println(sol.maxSumTwoNoOverlap(nums, 3, 4));
+    }
+
+    void minDominoRotations(){
+        Solution1007 sol = new Solution1007();
+        int[] A = {2,1,2,4,2,2};
+        int[] B = {5,2,6,2,3,2};
+        System.out.println(sol.minDominoRotations(A, B));
+    }
+
+
+    void wildMatch(){
+        Solution44 sol = new Solution44();
+        System.out.println(sol.isMatch("aacdbcdb","a*c?b"));
+    }
+
+    void canConvert(){
+        Solution1153 sol = new Solution1153();
+        System.out.println(sol.canConvert("abcdefghijklmnopqrstuvwxyz", "bcdefghijklmnopqrstuvwxyzq"));
+    }
+
+    void minCost(){
+        Solution256 sol = new Solution256();
+        int[][] costs = {{17,2,17},{16,16,5},{14,3,19}};
+        System.out.println(sol.minCost(costs));
+    }
+
+    void hasPathSum(){
+        Solution112 sol = new Solution112();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.left.left = new TreeNode(4);
+        root.left.left.left = new TreeNode(5);
+        root.right = new TreeNode(8);
+        root.right.left = new TreeNode(13);
+        root.right.right = new TreeNode(4);
+        root.right.right.right = new TreeNode(1);
+        root.left = new TreeNode(2);
+        System.out.println(sol.hasPathSum2(root, 6));
+    }
+    void serializeDeserialize(){
+        Solution297 sol = new Solution297();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.right.left = new TreeNode(4);
+        root.right.right = new TreeNode(5);
+        System.out.println(sol.deserialize(sol.serialize(root)));
+    }
+
+    void delNodesForest(){
+        Solution1110 sol = new Solution1110();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        int [] nums = {3,5};
+        System.out.println(sol.delNodes(root, nums));
+    }
+
+    void binaryTreePaths() {
+        Solution257 sol = new Solution257();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        System.out.println(sol.binaryTreePaths(root));
+    }
+
+    void widthOfBinaryTree() {
+        Solution662 sol = new Solution662();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(2);
+        root.left.left = new TreeNode(5);
+        root.left.right = new TreeNode(3);
+        root.right.right = new TreeNode(9);
+        System.out.println(sol.widthOfBinaryTree(root));
+    }
+
+    void distanceK() {
+        Solution863 sol = new Solution863();
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(1);
+        root.left.left = new TreeNode(6);
+        root.left.right = new TreeNode(2);
+        root.left.right.left = new TreeNode(7);
+        root.left.right.right = new TreeNode(4);
+
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(8);
+
+        System.out.println(sol.distanceK(root, root.left, 1));
+    }
+
+    void searchMatrix(){
+        Solution74 sol = new Solution74();
+        int[][] matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,50}};
+        System.out.println(sol.searchMatrix(matrix, 13));
+    }
+
+    void parkingSystem(){
+        Solution1603.ParkingSystem parkingSystem = new Solution1603.ParkingSystem(1,1,0);
+        System.out.println(parkingSystem.addCar(1));
+        System.out.println(parkingSystem.addCar(2));
+        System.out.println(parkingSystem.addCar(3));
+        System.out.println(parkingSystem.addCar(1));
+    }
+
+    void findMedianSortedArrays(){
+        Solution4 sol = new Solution4();
+        int[] nums1 = {1,3};
+        int[] nums2 = {2};
+        System.out.println(sol.findMedianSortedArrays(nums1, nums2));
+    }
+*/
+    void removeNthFromEnd() {
+        Solution19 sol = new Solution19();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        System.out.println(sol.removeNthFromEnd(head, 2));
+    }
+
+    void topKFrequent() {
+        Solution692 sol = new Solution692();
+        String[] words = {"the", "day", "is", "is", "sunny", "the", "the", "the", "day", "is", "is"};
+        System.out.println(sol.topKFrequent(words, 4));
+    }
+
+    void topKFrequentInt() {
+        Solution347 sol = new Solution347();
+        int[] nums = {1};
+        sol.topKFrequentHeap(nums, 1);
     }
 
 }
