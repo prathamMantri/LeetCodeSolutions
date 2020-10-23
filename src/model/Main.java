@@ -1,8 +1,6 @@
 package model;
 
-import leetcode.medium.Solution19;
-import leetcode.medium.Solution347;
-import leetcode.medium.Solution692;
+import leetcode.medium.Solution833;
 
 public class Main {
     public static void main(String[] args) {
@@ -90,7 +88,12 @@ public class Main {
         //main.parkingSystem();
         //main.findMedianSortedArrays();
         //main.removeNthFromEnd();
-        main.topKFrequent();
+        //main.topKFrequent();
+        //main.minimumWindow();
+        //main.maxSlidingWindow();
+        //main.minSumOfLengths();
+        main.findReplaceString();
+
     }
     /*
     void letterCasePermutation() {
@@ -734,7 +737,7 @@ public class Main {
         int[] nums2 = {2};
         System.out.println(sol.findMedianSortedArrays(nums1, nums2));
     }
-*/
+
     void removeNthFromEnd() {
         Solution19 sol = new Solution19();
         ListNode head = new ListNode(1);
@@ -752,6 +755,36 @@ public class Main {
         Solution347 sol = new Solution347();
         int[] nums = {1};
         sol.topKFrequentHeap(nums, 1);
+    }
+
+    void minimumWindow() {
+        Solution76 sol =  new Solution76();
+        System.out.println(sol.minimumWindow("ADOBECODEBANC","ABC"));
+    }
+
+
+
+    void maxSlidingWindow(){
+        Solution239 sol = new Solution239();
+        int[] nums = {1,3,-1,-3,5,3,6,7};
+        System.out.println(Arrays.toString(sol.maxSlidingWindow(nums, 3)));
+    }
+
+    void minSumOfLengths(){
+        Solution1477 sol = new Solution1477();
+        int[] arr = {3,1,1,2,1,3,1,2};
+        System.out.println(sol.minSumOfLengths(arr, 3));
+    }
+     */
+    void findReplaceString() {
+        Solution833 sol = new Solution833();
+        String S = "abcd";
+        int[] indexes = {0, 2};
+        String[] source = {"ad", "cd"};
+        String[] target = {"eeee", "ffff"};
+
+        System.out.println(sol.findReplaceString(S, indexes, source, target));
+
     }
 
 }

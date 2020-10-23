@@ -1,9 +1,6 @@
 package leetcode.medium;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.PriorityQueue;
 
 public class Solution973 {
 
@@ -21,13 +18,11 @@ public class Solution973 {
 
     /****
      *
-     *
      * We have a list of points on the plane.  Find the K closest points to the origin (0, 0).
      *
      * (Here, the distance between two points on a plane is the Euclidean distance.)
      *
      * You may return the answer in any order.  The answer is guaranteed to be unique (except for the order that it is in.)
-     *
      *
      *
      * Example 1:
@@ -45,46 +40,62 @@ public class Solution973 {
      * Output: [[3,3],[-2,4]]
      * (The answer [[-2,4],[3,3]] would also be accepted.)
      *
-     *
      * Note:
      *
      * 1 <= K <= points.length <= 10000
      * -10000 < points[i][0] < 10000
      * -10000 < points[i][1] < 10000
      *
-     *
-     *
-     *
      * @param points
      * @param K
      * @return
      */
 
-
     public int[][] kClosest(int[][] points, int K) {
-
-        Map<Double, List<Integer>> countMap = new TreeMap<>();
+        PriorityQueue<Distance> queue = new PriorityQueue<Distance>((a, b) -> (b.getDistance() - a.getDistance()));
         int[][] result = new int[K][2];
 
+        if (K == points.length) {
+            return points;
+        }
+        Distance d;
         for (int i = 0; i < points.length; i++) {
-            Double distance = Math.sqrt(Math.pow(points[i][0], 2) + Math.pow(points[i][1], 2));
-            List<Integer> coordinates = new ArrayList<>();
-            coordinates.add(points[i][0]);
-            coordinates.add(points[i][1]);
-            countMap.put(distance, coordinates);
-        }
 
-        int count = 0;
-        for (Map.Entry<Double, List<Integer>> entry : countMap.entrySet()) {
-            if (K == count) {
-                return result;
+            int distance = points[i][0] * points[i][0] + points[i][1] * points[i][1];
+            int[] coordinates = new int[2];
+
+            coordinates[0] = points[i][0];
+            coordinates[1] = points[i][1];
+
+            d = new Distance(coordinates, distance);
+            queue.offer(d);
+            if (queue.size() > K) {
+                queue.poll();
             }
-            result[count][0] = entry.getValue().get(0);
-            result[count][1] = entry.getValue().get(1);
-            count++;
         }
-
+        int i = 0;
+        while (!queue.isEmpty()) {
+            result[i++] = queue.poll().getCoordinates();
+            K--;
+        }
         return result;
     }
 
+    class Distance {
+        int[] coordinates;
+        int distance;
+
+        public Distance(int[] coordinates, int distance) {
+            this.coordinates = coordinates;
+            this.distance = distance;
+        }
+
+        int getDistance() {
+            return distance;
+        }
+
+        int[] getCoordinates() {
+            return coordinates;
+        }
+    }
 }
