@@ -1,8 +1,10 @@
 package leetcode.medium;
 
+import java.util.Arrays;
+
 public class Solution528 {
 
-    public static class RandomPick {
+  /*  public static class RandomPick {
         int[] indexArray;
 
         public RandomPick(int[] w) {
@@ -25,5 +27,24 @@ public class Solution528 {
             //int randomIndex = System.currentTimeMillis()/Math.random()
             return indexArray[0];
         }
+    }*/
+
+    private final double[] probabilities;
+
+    public Solution528(int[] w) {
+        double sum = 0;
+        this.probabilities = new double[w.length];
+        for (int weight : w)
+            sum += weight;
+        for (int i = 0; i < w.length; i++) {
+            w[i] += (i == 0) ? 0 : w[i - 1];
+            probabilities[i] = w[i] / sum;
+        }
     }
+
+    public int pickIndex() {
+        return Math.abs(Arrays.binarySearch(this.probabilities, Math.random())) - 1;
+    }
+
+
 }

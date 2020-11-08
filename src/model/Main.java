@@ -1,6 +1,6 @@
 package model;
 
-import leetcode.medium.Solution833;
+import leetcode.medium.Solution792;
 
 public class Main {
     public static void main(String[] args) {
@@ -92,7 +92,13 @@ public class Main {
         //main.minimumWindow();
         //main.maxSlidingWindow();
         //main.minSumOfLengths();
-        main.findReplaceString();
+        //main.findReplaceString();
+        //main.rightSideView();
+        //main.inviteFriends();
+        //main.shuffle();
+        // main.alphabetBoardPath();
+        //main.RLEIterator();
+        main.numMatchingSubseq();
 
     }
     /*
@@ -553,9 +559,8 @@ public class Main {
     }
 
     void randomPick() {
-        Solution528 sol = new Solution528();
         int[] nums = {1, 7, 3, 6, 5, 6};
-        Solution528.RandomPick rp = new Solution528.RandomPick(nums);
+        Solution528 rp = new Solution528(nums);
         System.out.println(rp.pickIndex());
         System.out.println(rp.pickIndex());
         System.out.println(rp.pickIndex());
@@ -775,16 +780,66 @@ public class Main {
         int[] arr = {3,1,1,2,1,3,1,2};
         System.out.println(sol.minSumOfLengths(arr, 3));
     }
-     */
+
     void findReplaceString() {
         Solution833 sol = new Solution833();
         String S = "abcd";
         int[] indexes = {0, 2};
         String[] source = {"ad", "cd"};
         String[] target = {"eeee", "ffff"};
-
         System.out.println(sol.findReplaceString(S, indexes, source, target));
+    }
+
+    void rightSideView(){
+        Solution199 sol = new Solution199();
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(9);
+        root.left.left = new TreeNode(5);
+        root.left.right = new TreeNode(1);
+        root.right = new TreeNode(0);
+        //root.left = new TreeNode(2);
+        System.out.println(sol.rightSideView(root));
+
 
     }
+
+    void inviteFriends(){
+        InviteFriends inviteFriends = new InviteFriends();
+        int[][] pairs = {{1, 2}, {2,3}, {3,4}};
+        System.out.println(inviteFriends.inviteFriends(pairs));
+    }
+
+    void shuffle(){
+        Solution746 sol = new Solution746();
+        int[] arr = {1,2,13,4,4,15,2,1};
+        sol.shuffle(arr, 4);
+    }
+
+    void alphabetBoardPath(){
+        Solution1138 sol = new Solution1138();
+        System.out.println(sol.alphabetBoardPath("aleetC"));
+    }
+    void RLEIterator(){
+        //int[] A = {923381016,843,898173122,924,540599925,391,705283400,275,811628709,850,895038968,590,949764874,580,450563107,660,996257840,917,793325084,82};
+        //int[] calls = {612783106, 486444202, 630147341, 845077576, 243035623, 731489221, 117134294, 220460537, 794582972, 332536150, 815913097, 100607521, 146358489, 697670641, 45234068, 573866037, 519323635, 27431940, 16279485, 203970};
+
+        int[] A = {3,8,0,9,2,5}; // 8 8 8 5 5
+        int[] calls = {4,1,1,2};
+
+        Solution900.RLEIterator rleIterator = new Solution900.RLEIterator(A);
+        for (int call : calls) {
+            System.out.println(rleIterator.next(call));
+        }
+    }
+    */
+
+    void numMatchingSubseq() {
+        Solution792 sol = new Solution792();
+
+        String S = "abcde";
+        String[] words = {"a", "bb", "acd", "ace", "bcd"};
+        sol.numMatchingSubseq(S, words);
+    }
+
 
 }
