@@ -1,6 +1,6 @@
 package model;
 
-import leetcode.medium.Solution792;
+import leetcode.hard.Solution410;
 
 public class Main {
     public static void main(String[] args) {
@@ -98,8 +98,14 @@ public class Main {
         //main.shuffle();
         // main.alphabetBoardPath();
         //main.RLEIterator();
-        main.numMatchingSubseq();
-
+        //main.numMatchingSubseq();
+        //main.sequenceReconstruction();
+        //main.canJump();
+        //main.jump2();
+        //main.jump3();
+        //main.jump4();
+        //main.snakeGame();
+        main.splitArray();
     }
     /*
     void letterCasePermutation() {
@@ -831,7 +837,6 @@ public class Main {
             System.out.println(rleIterator.next(call));
         }
     }
-    */
 
     void numMatchingSubseq() {
         Solution792 sol = new Solution792();
@@ -841,5 +846,65 @@ public class Main {
         sol.numMatchingSubseq(S, words);
     }
 
+    void sequenceReconstruction(){
+        Solution444 sol = new Solution444();
+        int[] org = {4,1,5,2,6,3};
+        List<Integer> seq;
+        List<List<Integer>> seqs = new ArrayList<>();
+        seq = new ArrayList<>();
+        seq.add(5);
+        seq.add(2);
+        seq.add(6);
+        seq.add(3);
+        seqs.add(seq);
+        seq = new ArrayList<>();
+        seq.add(4);
+        seq.add(1);
+        seq.add(5);
+        seq.add(2);
+        seqs.add(seq);
+        sol.sequenceReconstruction(org, seqs);
+    }
 
+    void canJump() {
+        Solution55 sol = new Solution55();
+        int[] a = {2,3,1,0,4};
+        System.out.println(sol.canJump(a));
+    }
+
+    void jump2(){
+        Solution45 sol = new Solution45();
+        int[] A = {5,3,1,1,4};
+        System.out.println(sol.jump2(A));
+    }
+    void jump3(){
+        Solution1306 sol = new Solution1306();
+        int[] A = {5,3,1,1,4};
+        System.out.println(sol.canReach(A, 5));S
+    }
+
+    void jump4(){
+        Solution1345 sol = new Solution1345();
+        int[] A = {100,-23,-23,404,100,23,23,23,3,404};
+        System.out.println(sol.minJumps(A));
+    }
+    void snakeGame(){
+        int width= 3;
+        int height = 2;
+        int[][] food = {{1,2},{0,1}};
+        Solution353.SnakeGame snakeGame = new Solution353.SnakeGame(width, height, food);
+        System.out.println(snakeGame.move("R"));
+        System.out.println(snakeGame.move("D"));
+        System.out.println(snakeGame.move("R"));
+        System.out.println(snakeGame.move("U"));
+        System.out.println(snakeGame.move("L"));
+        System.out.println(snakeGame.move("U"));
+    }
+     */
+
+    void splitArray() {
+        int[] nums = {7, 2, 5, 10, 8};
+        Solution410 sol = new Solution410();
+        System.out.println(sol.splitArray(nums, 2));
+    }
 }

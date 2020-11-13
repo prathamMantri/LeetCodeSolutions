@@ -50,20 +50,14 @@ public class Solution55 {
             int i = nums.length-1;
             int lastIndex = nums.length-1;
             boolean canJumpFlag = false;
-            while(i>    0){
-                if(lastIndex - (--i) <= nums[i] ){
+            while (i > 0) {
+                if (lastIndex - (--i) <= nums[i]) {
                     canJumpFlag = true;
                     lastIndex = i;
-                }else{
+                } else {
                     canJumpFlag = false;
                 }
             }
             return canJumpFlag;
-    }
-
-    public static void main(String[] args) {
-        Solution55 sol = new Solution55();
-        int[] a = {1,2,0,0,0};
-        System.out.println(sol.canJump(a));
     }
 }
