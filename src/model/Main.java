@@ -1,6 +1,7 @@
 package model;
 
-import leetcode.hard.Solution410;
+import leetcode.hard.Solution354;
+import leetcode.medium.Solution300;
 
 public class Main {
     public static void main(String[] args) {
@@ -105,7 +106,10 @@ public class Main {
         //main.jump3();
         //main.jump4();
         //main.snakeGame();
-        main.splitArray();
+        // main.splitArray();
+        //main.deserializeNArray();
+        //  main.maxEnvelopes();
+        main.lengthOfLIS();
     }
     /*
     void letterCasePermutation() {
@@ -900,11 +904,46 @@ public class Main {
         System.out.println(snakeGame.move("L"));
         System.out.println(snakeGame.move("U"));
     }
-     */
+
 
     void splitArray() {
         int[] nums = {7, 2, 5, 10, 8};
         Solution410 sol = new Solution410();
         System.out.println(sol.splitArray(nums, 2));
+    }
+    void deserializeNArray(){
+        NTreeNode node1 = new NTreeNode(1);
+        NTreeNode node2 = new NTreeNode(2);
+        NTreeNode node3 = new NTreeNode(3);
+        NTreeNode node4 = new NTreeNode(4);
+        NTreeNode node5 = new NTreeNode(5);
+        NTreeNode node6 = new NTreeNode(6);
+        List<NTreeNode> children1 = new ArrayList<>();
+        List<NTreeNode> children2 = new ArrayList<>();
+
+
+        children1.add(node3);
+        children1.add(node2);
+        children1.add(node4);
+        children2.add(node5);
+        children2.add(node6);
+        node1.children = children1;
+        node1.children.get(0).children = children2;
+
+        Solution428 sol = new Solution428();
+        sol.deserialize(sol.serialize(node1));
+
+    }
+    */
+    void maxEnvelopes() {
+        int[][] envelopes = {{46, 89}, {50, 53}, {52, 68}, {72, 45}, {77, 81}};
+        Solution354 sol = new Solution354();
+        System.out.println(sol.maxEnvelopes(envelopes));
+    }
+
+    void lengthOfLIS() {
+        int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
+        Solution300 sol = new Solution300();
+        System.out.println(sol.lengthOfLIS(nums));
     }
 }
