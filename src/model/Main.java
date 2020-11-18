@@ -1,7 +1,6 @@
 package model;
 
-import leetcode.hard.Solution354;
-import leetcode.medium.Solution300;
+import leetcode.hard.Solution465;
 
 public class Main {
     public static void main(String[] args) {
@@ -106,10 +105,11 @@ public class Main {
         //main.jump3();
         //main.jump4();
         //main.snakeGame();
-        // main.splitArray();
+        //main.splitArray();
         //main.deserializeNArray();
-        //  main.maxEnvelopes();
-        main.lengthOfLIS();
+        //main.maxEnvelopes();
+        //main.lengthOfLIS();
+        main.minTransfers();
     }
     /*
     void letterCasePermutation() {
@@ -921,12 +921,12 @@ public class Main {
         List<NTreeNode> children1 = new ArrayList<>();
         List<NTreeNode> children2 = new ArrayList<>();
 
-
         children1.add(node3);
         children1.add(node2);
         children1.add(node4);
         children2.add(node5);
         children2.add(node6);
+
         node1.children = children1;
         node1.children.get(0).children = children2;
 
@@ -934,16 +934,25 @@ public class Main {
         sol.deserialize(sol.serialize(node1));
 
     }
-    */
+
     void maxEnvelopes() {
         int[][] envelopes = {{46, 89}, {50, 53}, {52, 68}, {72, 45}, {77, 81}};
         Solution354 sol = new Solution354();
         System.out.println(sol.maxEnvelopes(envelopes));
     }
-
     void lengthOfLIS() {
         int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
         Solution300 sol = new Solution300();
         System.out.println(sol.lengthOfLIS(nums));
+    }
+
+     */
+    void minTransfers() {
+        Solution465 sol = new Solution465();
+        int[][] transactions = {{0, 1, 10},
+                //{1,0,1},
+                //{1,2,5},
+                {2, 0, 5}};
+        System.out.println(sol.minTransfers(transactions));
     }
 }
