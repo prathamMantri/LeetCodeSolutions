@@ -1,6 +1,6 @@
 package model;
 
-import leetcode.hard.Solution465;
+import leetcode.hard.Solution753;
 
 public class Main {
     public static void main(String[] args) {
@@ -109,7 +109,10 @@ public class Main {
         //main.deserializeNArray();
         //main.maxEnvelopes();
         //main.lengthOfLIS();
-        main.minTransfers();
+        //main.minTransfers();
+        //main.numSubmat();
+        //main.autoCompleteSystem();
+        main.crackSafe();
     }
     /*
     void letterCasePermutation() {
@@ -946,7 +949,6 @@ public class Main {
         System.out.println(sol.lengthOfLIS(nums));
     }
 
-     */
     void minTransfers() {
         Solution465 sol = new Solution465();
         int[][] transactions = {{0, 1, 10},
@@ -954,5 +956,41 @@ public class Main {
                 //{1,2,5},
                 {2, 0, 5}};
         System.out.println(sol.minTransfers(transactions));
+    }
+
+    void numSubmat() {
+        int[][] mat = {{1, 1, 1, 1, 0}, {1, 0, 0, 1, 0}, {0, 0, 1, 0, 1}, {0, 1, 0, 0, 0}};
+        Solution1504 sol = new Solution1504();
+        System.out.println(sol.numSubmat(mat));
+    }
+
+
+    void autoCompleteSystem(){
+
+        String[] words = {"i love you", "island","ironman", "i love leetcode"};
+        int[] times = {5,3,2,2};
+
+        Solution642.AutocompleteSystem autocompleteSystem = new Solution642.AutocompleteSystem(words, times);
+
+        //["i"],[" "],["a"],["#"],["i"],[" "],["a"],["#"],["i"],[" "],["a"],["#"]
+        System.out.println(autocompleteSystem.input('i').toString());
+        System.out.println(autocompleteSystem.input(' ').toString());
+        System.out.println(autocompleteSystem.input('a').toString());
+        System.out.println(autocompleteSystem.input('#').toString());
+        System.out.println(autocompleteSystem.input('i').toString());
+        System.out.println(autocompleteSystem.input(' ').toString());
+        System.out.println(autocompleteSystem.input('a').toString());
+        System.out.println(autocompleteSystem.input('#').toString());
+        System.out.println(autocompleteSystem.input('i').toString());
+        System.out.println(autocompleteSystem.input(' ').toString());
+        System.out.println(autocompleteSystem.input('a').toString());
+        System.out.println(autocompleteSystem.input('#').toString());
+
+    }
+    */
+
+    void crackSafe() {
+        Solution753 sol = new Solution753();
+        System.out.println(sol.crackSafe(3, 3));
     }
 }

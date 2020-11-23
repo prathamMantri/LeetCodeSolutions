@@ -1,7 +1,7 @@
 package leetcode.medium;
 
-public class Solution48 {
- /*  // *******Recursive Solution  *****
+public class Solution240 {
+     /*  // *******Recursive Solution  *****
     public boolean searchMatrix(int[][] matrix, int target) {
         return searchMatrix(matrix.length-1, 0,matrix, target);
     }
@@ -38,5 +38,4 @@ public class Solution48 {
         }
         return false;
     }
-
 }
