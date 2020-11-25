@@ -1,6 +1,8 @@
 package model;
 
-import leetcode.hard.Solution753;
+import leetcode.medium.Solution303;
+import leetcode.medium.Solution307;
+import leetcode.medium.Solution308;
 
 public class Main {
     public static void main(String[] args) {
@@ -112,7 +114,13 @@ public class Main {
         //main.minTransfers();
         //main.numSubmat();
         //main.autoCompleteSystem();
-        main.crackSafe();
+        //main.crackSafe();
+        //main.rangeModule();
+        //main.encodeString();
+        //main.search();
+        //main.rangeSumMutable();
+        //main.rangeSumImmutable();
+        main.rangeSumImmutable2D();
     }
     /*
     void letterCasePermutation() {
@@ -987,10 +995,68 @@ public class Main {
         System.out.println(autocompleteSystem.input('#').toString());
 
     }
-    */
 
     void crackSafe() {
         Solution753 sol = new Solution753();
         System.out.println(sol.crackSafe(3, 3));
     }
+
+
+    void rangeModule() {
+        Solution715.RangeModule sol = new Solution715.RangeModule();
+        sol.addRange(10, 20);
+        sol.removeRange(14, 16);
+        System.out.println(sol.queryRange(10, 14));
+        System.out.println(sol.queryRange(13, 15));
+        System.out.println(sol.queryRange(16, 17));
+    }
+    void encodeString(){
+        Solution471 sol = new Solution471();
+        System.out.println(sol.encode("aaaaaaaaaa"));
+    }
+
+    void search() {
+        Solution81 sol = new Solution81();
+        int[] nums = {2, 5, 6, 0, 0, 1, 2};
+        System.out.println(sol.search(nums, 3));
+    }
+
+    */
+
+    void rangeSumMutable() {
+
+        int[] nums = {1, 3, 5};
+        Solution307.NumArray sol = new Solution307.NumArray(nums);
+        System.out.println(sol.sumRange(0, 2));
+        sol.update(1, 2);
+        System.out.println(sol.sumRange(0, 2));
+    }
+
+
+    void rangeSumImmutable() {
+
+        int[] nums = {1, 2, 3, 4, 5, 6};
+        Solution303.NumArray sol = new Solution303.NumArray(nums);
+        System.out.println(sol.sumRange(0, 2));
+        System.out.println(sol.sumRange(2, 5));
+        System.out.println(sol.sumRange(0, 5));
+        System.out.println(sol.sumRange(1, 5));
+    }
+
+    void rangeSumImmutable2D() {
+        int[][] nums = {{3, 0, 1, 4, 2},
+                {5, 6, 3, 2, 1},
+                {1, 2, 0, 1, 5},
+                {4, 1, 0, 1, 7},
+                {1, 0, 3, 0, 5}};
+        Solution308.NumMatrix sol = new Solution308.NumMatrix(nums);
+        System.out.println();
+        System.out.println(sol.sumRegion(2, 1, 4, 3));
+        System.out.println();
+        sol.update(3, 2, 2);
+        System.out.println();
+        System.out.println(sol.sumRegion(2, 1, 4, 3));
+    }
+
+
 }
