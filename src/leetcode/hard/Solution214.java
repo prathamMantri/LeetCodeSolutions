@@ -32,4 +32,5 @@ public class Solution214 {
         String reverse = sb.reverse().toString();
         return reverse + shortestPalindrome(s.substring(0, i)) + s.substring(i);
     }
+
 }

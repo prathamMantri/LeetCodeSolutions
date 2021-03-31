@@ -18,10 +18,18 @@ public class Solution715 {
             int lowerKey = map.lowerKey(left); //  greatest key strictly less than the given key
             int floorKey = map.floorKey(right); //  greatest key less than or equal to the given key
 
-            boolean from = map.get(lowerKey); // if it is available then from becomes true , if not (meaning there is no such key which is strictly less than give key) its false
+            System.out.println(lowerKey);
+            System.out.println(floorKey);
+
+
+            boolean from = map.get(lowerKey);// if it is available then from becomes true , if not (meaning there is no such key which is strictly less than give key) its false
+            System.out.println("is \"from\" Available for left value " + left + "====>" + from);
             boolean to = map.get(floorKey); //
+            System.out.println("is \"to\" Available for right value " + right + "====>" + to);
 
             map.subMap(left, true, right, true).clear();
+
+            System.out.println("Map from " + left + " to " + right + " got cleared");
 
             if (!from) map.put(left, true);
             if (!to) map.put(right, false);

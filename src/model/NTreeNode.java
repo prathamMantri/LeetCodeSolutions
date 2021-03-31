@@ -4,6 +4,8 @@ import java.util.List;
 
 public class NTreeNode {
     public int val;
+    public String lastname;
+    public String firstName;
     public List<NTreeNode> children;
 
     public NTreeNode() {

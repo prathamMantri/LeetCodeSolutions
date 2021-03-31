@@ -1,8 +1,7 @@
 package model;
 
-import leetcode.medium.Solution303;
-import leetcode.medium.Solution307;
-import leetcode.medium.Solution308;
+import leetcode.medium.Solution1023;
+import stringRelated.KMPPatternMatching;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class Main {
         //main.letterCasePermutation();
         //main.solution79();
         //main.sumNumbers();
-        //main.combinationSum();*/
+        //main.combinationSum();
         //main.combinationSum2();
         //main.combinationSum3();
         //main.smallestFromLeaf();
@@ -41,7 +40,6 @@ public class Main {
         //main.isNStraightHand();
         //main.isPossible();
         //main.expressiveWords();
-        //main.camelMatch();
         //main.getMaximumGold();
         //main.grayCode();
         //main.findWords();
@@ -78,6 +76,7 @@ public class Main {
         //main.maxSumTwoNoOverlap();
         //main.minDominoRotations();
         //main.wildMatch();
+        //main.majorityElement();
         //main.canConvert();
         //main.minCost();
         //main.hasPathSum();
@@ -115,14 +114,19 @@ public class Main {
         //main.numSubmat();
         //main.autoCompleteSystem();
         //main.crackSafe();
-        //main.rangeModule();
         //main.encodeString();
         //main.search();
         //main.rangeSumMutable();
         //main.rangeSumImmutable();
-        main.rangeSumImmutable2D();
+        //main.rangeSumImmutable2D();
+        //main.getSkyLine();
+        //main.rangeModule();
+        //main.sherlockValidString();
+        //main.substrCount();
+        //main.KMPPatternMatching();
     }
-    /*
+/*
+
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
         System.out.println(sol.letterCasePermutation("a1b1"));
@@ -287,7 +291,7 @@ public class Main {
         int[] nums5 = {-2, -1, 1, 2};
         int[] nums6 = {-2, -1, 1, -2};
         int[] nums7 = {1, -1, -2, -2};
-        int[] nums8 = {-9, 5, -7, 5, 2, -5, -5, 8, 3, 10};
+        int[] nums8 = {-9, 5, -3, 5, 2, -5, -5, 8, 3, 10};
         System.out.println(Arrays.toString(sol.asteroidCollision(nums)));
         System.out.println(Arrays.toString(sol.asteroidCollision(nums1)));
         System.out.println(Arrays.toString(sol.asteroidCollision(nums2)));
@@ -321,7 +325,7 @@ public class Main {
                                 null,
                                 null)),
                 new TreeNode(7, null, null));
-        /*root.left = new TreeNode(2);
+        root.left = new TreeNode(2);
         root.right = new TreeNode(7);
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(3);
@@ -402,12 +406,6 @@ public class Main {
         Solution809 sol = new Solution809();
         String[] words = {"hello", "hi", "helo"};
         System.out.println(sol.expressiveWords("heeellooo", words));
-    }
-    void camelMatch() {
-        Solution1023 sol = new Solution1023();
-        String[] queries = {"mifeqvzphnrv", "mieqxvrvhnrv", "mhieqovhnryv", "mieqekvhnrpv", "miueqrvfhnrv", "mieqpvhzntrv", "gmimeqvphnrv", "mieqvhqyunrv"};
-        String pattern = "mieqvhnrv";
-        System.out.println(sol.camelMatch(queries, pattern));
     }
     void getMaximumGold() {
         Solution1921 sol = new Solution1921();
@@ -497,14 +495,9 @@ public class Main {
         System.out.println(sol.decodeString("3[a2[c]]")); //accaccacc
     }
 
-    void basicCalculator(){
-        Solution224 sol = new Solution224();
-        System.out.println(sol.calculate("1 + 1"));
-    }
-
     void removeComments() {
         Solution722 sol = new Solution722();
-        //String[] code = {"void func(int k) {", "// this function does nothing /*", "   k = k*2/4;", "   k = k/2;", "}"};
+        //String[] code = {"void func(int k) {", "// this function does nothing ", "   k = k*2/4;", "   k = k/2;", "}"};
 
 
         System.out.println(sol.removeComments(code));
@@ -651,10 +644,18 @@ public class Main {
     }
 
 
-    void wildMatch(){
+    void wildMatch() {
         Solution44 sol = new Solution44();
-        System.out.println(sol.isMatch("aacdbcdb","a*c?b"));
+        System.out.println(sol.isMatch("aacdbcdb", "a*c?b"));
     }
+
+    void majorityElement() {
+        Solution169 sol = new Solution169();
+        int[] nums = {7, 7, 5, 7, 5, 1, 5, 7, 5, 5, 7, 7, 7, 7, 7, 7};
+        sol.majorityElement(nums);
+
+    }
+
 
     void canConvert(){
         Solution1153 sol = new Solution1153();
@@ -1001,15 +1002,6 @@ public class Main {
         System.out.println(sol.crackSafe(3, 3));
     }
 
-
-    void rangeModule() {
-        Solution715.RangeModule sol = new Solution715.RangeModule();
-        sol.addRange(10, 20);
-        sol.removeRange(14, 16);
-        System.out.println(sol.queryRange(10, 14));
-        System.out.println(sol.queryRange(13, 15));
-        System.out.println(sol.queryRange(16, 17));
-    }
     void encodeString(){
         Solution471 sol = new Solution471();
         System.out.println(sol.encode("aaaaaaaaaa"));
@@ -1020,8 +1012,6 @@ public class Main {
         int[] nums = {2, 5, 6, 0, 0, 1, 2};
         System.out.println(sol.search(nums, 3));
     }
-
-    */
 
     void rangeSumMutable() {
 
@@ -1056,6 +1046,59 @@ public class Main {
         sol.update(3, 2, 2);
         System.out.println();
         System.out.println(sol.sumRegion(2, 1, 4, 3));
+    }
+
+    void basicCalculator(){
+        Solution224 sol = new Solution224();
+        System.out.println(sol.calculate("(1-(4+5+2)-3)-(6+8)"));
+    }
+
+    void getSkyLine(){
+
+        Solution218 sol = new Solution218();
+        int[][] skyLines = {{2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}};
+        sol.getSkyline(skyLines);
+
+    }
+
+    void rangeModule() {
+        Solution715.RangeModule sol = new Solution715.RangeModule();
+        sol.addRange(2, 6);
+        sol.addRange(2, 6);
+        System.out.println(sol.queryRange(3, 4));
+        System.out.println(sol.queryRange(1, 3));
+        System.out.println(sol.queryRange(5, 8));
+        sol.addRange(3, 8);
+        sol.addRange(10, 15);
+        sol.addRange(1, 4);
+        sol.removeRange(4, 6);
+        sol.removeRange(1, 3);
+        sol.removeRange(12, 13);
+    }
+
+    void sherlockValidString(){
+        SherlockValidString sherlockValidString = new SherlockValidString();
+        String s= "ibfdgaeadiaefgbhbdghhhbgdfgeiccbiehhfcggchgghadhdhagfbahhddgghbdehidbibaeaagaeeigffcebfbaieggabcfbiiedcabfihchdfabifahcbhagccbdfifhghcadfiadeeaheeddddiecaicbgigccageicehfdhdgafaddhffadigfhhcaedcedecafeacbdacgfgfeeibgaiffdehigebhhehiaahfidibccdcdagifgaihacihadecgifihbebffebdfbchbgigeccahgihbcbcaggebaaafgfedbfgagfediddghdgbgehhhifhgcedechahidcbchebheihaadbbbiaiccededchdagfhccfdefigfibifabeiaccghcegfbcghaefifbachebaacbhbfgfddeceababbacgffbagidebeadfihaefefegbghgddbbgddeehgfbhafbccidebgehifafgbghafacgfdccgifdcbbbidfifhdaibgigebigaedeaaiadegfefbhacgddhchgcbgcaeaieiegiffchbgbebgbehbbfcebciiagacaiechdigbgbghefcahgbhfibhedaeeiffebdiabcifgccdefabccdghehfibfiifdaicfedagahhdcbhbicdgibgcedieihcichadgchgbdcdagaihebbabhibcihicadgadfcihdheefbhffiageddhgahaidfdhhdbgciiaciegchiiebfbcbhaeagccfhbfhaddagnfieihghfbaggiffbbfbecgaiiidccdceadbbdfgigibgcgchafccdchgifdeieicbaididhfcfdedbhaadedfageigfdehgcdaecaebebebfcieaecfagfdieaefdiedbcadchabhebgehiidfcgahcdhcdhgchhiiheffiifeegcfdgbdeffhgeghdfhbfbifgidcafbfcd";
+        System.out.println(sherlockValidString.isValid(s));
+
+    }
+
+    void substrCount(){
+        SpecialStringAgain sp = new SpecialStringAgain();
+        System.out.println(sp.substrCount(8, "mnonopoo"));
+    }
+    */
+
+    void KMPPatternMatching() {
+        KMPPatternMatching kmpPatternMatching = new KMPPatternMatching();
+        System.out.println(kmpPatternMatching.getKMPTable("abbcbcabc"));
+    }
+
+    void camelMatch() {
+        Solution1023 sol = new Solution1023();
+        String[] queries = {"FooBor", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"};
+        String pattern = "FoBa";
+        System.out.println(sol.camelMatch(queries, pattern));
     }
 
 

@@ -5,6 +5,7 @@ public interface Robot {
     // Returns false if the cell in front is blocked and robot stays in the current cell.
     boolean move();
 
+
     // Robot will stay in the same cell after calling turnLeft/turnRight.
     // Each turn will be 90 degrees.
     void turnLeft();

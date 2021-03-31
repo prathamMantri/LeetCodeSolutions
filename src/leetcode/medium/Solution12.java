@@ -1,31 +1,30 @@
 package leetcode.medium;
 
-import java.util.HashMap;
-
 public class Solution12 {
 
     public static void main(String[] args) {
 
 
         Solution12 solution12 = new Solution12();
-        solution12.intToRoman(3508);
+        solution12.intToRoman(505);
 
 
     }
 
-    public String intToRoman(int num) {
+    public String intToRoman(int number) {
+       /*
         HashMap<Integer, String> romanMap = new HashMap<>();
 
         StringBuilder result = new StringBuilder();
 
         romanMap.put(1, "I");
-       /* romanMap.put(2, "II");
-        romanMap.put(3, "III");*/
+        romanMap.put(2, "II");
+        romanMap.put(3, "III");
         romanMap.put(4, "IV");
         romanMap.put(5, "V");
-       /* romanMap.put(6, "VI");
+        romanMap.put(6, "VI");
         romanMap.put(7, "VII");
-        romanMap.put(8, "VIII");*/
+        romanMap.put(8, "VIII");
         romanMap.put(9, "IX");
         romanMap.put(10, "X");
         romanMap.put(40, "XL");
@@ -60,6 +59,22 @@ public class Solution12 {
         }
         System.out.println(result);
         return result.toString();
+        */
+
+        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] numerals = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < values.length; i++) {
+            while (number >= values[i]) {
+                number -= values[i];
+                result.append(numerals[i]);
+                if (number == 0)
+                    return result.toString();
+            }
+        }
+        return result.toString();
+
+
     }
 
 

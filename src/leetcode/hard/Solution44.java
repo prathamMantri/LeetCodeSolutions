@@ -4,24 +4,24 @@ public class Solution44 {
 
     //if asked in interview, use this code
     public boolean isMatch(String str, String pattern) {
-        int s = 0, p = 0, match = 0, starIdx = -1;
-        while (s < str.length()) {
+        int sIndex = 0, pIndex = 0, match = 0, starIndex = -1;
+        while (sIndex < str.length()) {
             // advancing both pointers
-            if (p < pattern.length() && (pattern.charAt(p) == '?' || str.charAt(s) == pattern.charAt(p))) {
-                s++;
-                p++;
+            if (pIndex < pattern.length() && (pattern.charAt(pIndex) == '?' || str.charAt(sIndex) == pattern.charAt(pIndex))) {
+                sIndex++;
+                pIndex++;
             }
             // * found, only advancing pattern pointer
-            else if (p < pattern.length() && pattern.charAt(p) == '*') {
-                starIdx = p;
-                match = s;
-                p++;
+            else if (pIndex < pattern.length() && pattern.charAt(pIndex) == '*') {
+                starIndex = pIndex;
+                match = sIndex;
+                pIndex++;
             }
             // last pattern pointer was *, advancing string pointer
-            else if (starIdx != -1) {
-                p = starIdx + 1;
-                match++;
-                s = match;
+            else if (starIndex != -1) {
+                pIndex = starIndex + 1;
+                match++; // match is containing the character which you can skip at each backtrack. for every backtrack,match increases, so that same sIndex do not start from same index again.
+                sIndex = match;
             }
             //current pattern pointer is not star, last patter pointer was not *
             //characters do not match
@@ -29,10 +29,10 @@ public class Solution44 {
         }
 
         //check for remaining characters in pattern
-        while (p < pattern.length() && pattern.charAt(p) == '*')
-            p++;
+        while (pIndex < pattern.length() && pattern.charAt(pIndex) == '*')
+            pIndex++;
 
-        return p == pattern.length();
+        return pIndex == pattern.length();
     }
     /*
         public boolean isMatch(String s, String p) {
