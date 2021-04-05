@@ -12,7 +12,7 @@ public class Solution239 {
         int[] res = new int[nums.length - k + 1];
         int i = 0;
         while (i < nums.length) {
-            // check if an element is going out of the window
+            // check if an element is going out of the windowSo
             if (!deq.isEmpty() && deq.peekFirst() == i - k) {
                 deq.pollFirst(); // remove that element from first
             }

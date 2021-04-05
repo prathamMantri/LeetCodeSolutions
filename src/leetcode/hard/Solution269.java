@@ -8,7 +8,18 @@ public class Solution269 {
         Map<Character, List<Character>> map = new HashMap<>();
         Map<Character, Integer> degree = new HashMap<>();
 
-        //Step 2: Create graph and assign degree
+
+        //Step 2: Update map and degree with unique characters
+        for (String word : words) {
+            for (char c : word.toCharArray()) {
+                map.put(c, new ArrayList<>());
+                degree.put(c, 0);
+            }
+
+        }
+
+
+        //Step 3: Create graph and assign degree
         for (int i = 1; i < words.length; i++) {
 
             String word1 = words[i - 1];
@@ -19,8 +30,9 @@ public class Solution269 {
 
             for (int j = 0; j < Math.min(word1.length(), word2.length()); j++) {
                 if (word1.charAt(j) != word2.charAt(j)) {
-                    map.computeIfAbsent(word1.charAt(j), k -> new ArrayList<>()).add(word2.charAt(j));
-                    degree.put(word2.charAt(j), degree.getOrDefault(word2.charAt(j), 0) + 1);
+                    map.get(word1.charAt(j)).add(word2.charAt(j));
+                    degree.put(word2.charAt(j), degree.get(word2.charAt(j)) + 1);
+                    break;
                 }
             }
         }
@@ -28,7 +40,7 @@ public class Solution269 {
         Queue<Character> q = new LinkedList<>();
 
         for (char c : degree.keySet()) {
-            if (degree.get(c) == 0)
+            if (degree.get(c).equals(0))
                 q.offer(c);
         }
 
@@ -40,10 +52,10 @@ public class Solution269 {
             for (char next : map.get(c)) {
                 degree.put(next, degree.get(next) - 1);
                 if (degree.get(next) == 0)
-                    q.offer(c);
+                    q.offer(next);
             }
         }
-        return sb.toString();
+        return sb.length() < degree.size() ? "" : sb.toString();
 
     }
 }

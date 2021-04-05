@@ -2,8 +2,6 @@ package leetcode.medium;
 
 import java.util.*;
 
-//Needs more attention
-
 /**
  * Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK.
  * <p>
@@ -25,51 +23,44 @@ import java.util.*;
  */
 
 
+/**
+ *          The graph must be Eulerian since we know that a Eulerian path exists.
+ *          Thus, start from "JFK", we can apply the Hierholzer's algorithm to find a Eulerian path in the graph which is a valid reconstruction.
+ *          Since the problem asks for lexical order smallest solution, we can put the neighbors in a min-heap. In this way, we always visit the smallest possible neighbor first in our trip.
+ */
+
 public class Solution332 {
 
-    public static void main(String[] args) {
-        Solution332 sol = new Solution332();
 
-        List<List<String>> tickets = new ArrayList<>();
+    public List<String> findItinerary(List<List<String>> tickets) {
 
-       /* List<String> ticket1 = new ArrayList<>();
-        ticket1.add("JFK");
-        ticket1.add("KUL");
-        List<String> ticket2 = new ArrayList<>();
-        ticket2.add("JFK");
-        ticket2.add("NRT");
-        List<String> ticket3 = new ArrayList<>();
-        ticket3.add("NRT");
-        ticket3.add("JFK");*/
+        Map<String, PriorityQueue<String>> map = new HashMap<>();
 
-        List<String> ticket1 = new ArrayList<>();
-        ticket1.add("JFK");
-        ticket1.add("SFO");
-        List<String> ticket2 = new ArrayList<>();
-        ticket2.add("JFK");
-        ticket2.add("ATL");
-        List<String> ticket3 = new ArrayList<>();
-        ticket3.add("SFO");
-        ticket3.add("ATL");
-        List<String> ticket4 = new ArrayList<>();
-        ticket4.add("ATL");
-        ticket4.add("JFK");
-        List<String> ticket5 = new ArrayList<>();
-        ticket5.add("ATL");
-        ticket5.add("SFO");
+        for (List<String> ticket : tickets) {
 
-        tickets.add(ticket1);
-        tickets.add(ticket2);
-        tickets.add(ticket3);
-        tickets.add(ticket4);
-        tickets.add(ticket5);
+            String source = ticket.get(0);
+            String dest = ticket.get(1);
 
-        sol.findItinerary(tickets);
+            map.putIfAbsent(source, new PriorityQueue<>());
+            map.get(source).add(dest);
 
+        }
+        LinkedList<String> result = new LinkedList<>();
+        dfs("JFK", map, result);
+        return result;
 
     }
 
-    public List<String> findItinerary(List<List<String>> tickets) {
+    private void dfs(String source, Map<String, PriorityQueue<String>> map, LinkedList<String> res) {
+        PriorityQueue<String> destinations = map.get(source);
+        while (!destinations.isEmpty()) {
+            dfs(destinations.poll(), map, res);
+        }
+        res.addFirst(source);
+    }
+
+
+    public List<String> findItineraryError(List<List<String>> tickets) {
 
         List<String> res = new ArrayList<>();
 
@@ -109,6 +100,16 @@ public class Solution332 {
         }
 
     }
+
+
+
+
+
+
+
+
+
+
 
 
 }

@@ -1,7 +1,6 @@
 package model;
 
-import leetcode.medium.Solution1023;
-import stringRelated.KMPPatternMatching;
+import leetcode.medium.Solution287;
 
 public class Main {
     public static void main(String[] args) {
@@ -124,8 +123,16 @@ public class Main {
         //main.sherlockValidString();
         //main.substrCount();
         //main.KMPPatternMatching();
+        // main.maxSlidingWindow();
+        //main.alienOrder();
+        //main.concatenatedWords();
+        //main.wordBreak2();
+        //main.findItenerary();
+        main.findDuplicate();
+
     }
-/*
+
+    /*
 
     void letterCasePermutation() {
         Solution784 sol = new Solution784();
@@ -783,20 +790,6 @@ public class Main {
         int[] nums = {1};
         sol.topKFrequentHeap(nums, 1);
     }
-
-    void minimumWindow() {
-        Solution76 sol =  new Solution76();
-        System.out.println(sol.minimumWindow("ADOBECODEBANC","ABC"));
-    }
-
-
-
-    void maxSlidingWindow(){
-        Solution239 sol = new Solution239();
-        int[] nums = {1,3,-1,-3,5,3,6,7};
-        System.out.println(Arrays.toString(sol.maxSlidingWindow(nums, 3)));
-    }
-
     void minSumOfLengths(){
         Solution1477 sol = new Solution1477();
         int[] arr = {3,1,1,2,1,3,1,2};
@@ -821,8 +814,6 @@ public class Main {
         root.right = new TreeNode(0);
         //root.left = new TreeNode(2);
         System.out.println(sol.rightSideView(root));
-
-
     }
 
     void inviteFriends(){
@@ -1087,7 +1078,7 @@ public class Main {
         SpecialStringAgain sp = new SpecialStringAgain();
         System.out.println(sp.substrCount(8, "mnonopoo"));
     }
-    */
+
 
     void KMPPatternMatching() {
         KMPPatternMatching kmpPatternMatching = new KMPPatternMatching();
@@ -1099,6 +1090,98 @@ public class Main {
         String[] queries = {"FooBor", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"};
         String pattern = "FoBa";
         System.out.println(sol.camelMatch(queries, pattern));
+    }
+
+    void maxSlidingWindow(){
+        Solution239 sol = new Solution239();
+        int[] nums = {1,3,-1,-3,5,3,6,7};
+        System.out.println(Arrays.toString(sol.maxSlidingWindow(nums, 3)));
+    }
+
+    void alienOrder(){
+        Solution269 sol = new Solution269();
+        String[] words = {"wrt","wrf","er","ett","rftt"};
+        System.out.println(sol.alienOrder(words));
+    }
+
+    void wordBreak2(){
+
+        Solution140 sol = new Solution140();
+        String s = "catsanddog";
+        List<String> list = new ArrayList<>();
+        list.add("cat");
+        list.add("cats");
+        list.add("and");
+        list.add("sand");
+        list.add("dog");
+        sol.wordBreak2(s, list);
+
+
+    }
+
+
+
+    void concatenatedWords(){
+        Solution472 sol = new Solution472();
+        String[] words = {""};
+        System.out.println(sol.findAllConcatenatedWordsInADict(words).toString());
+    }
+
+
+    void minimumWindow() {
+        Solution76 sol =  new Solution76();
+        System.out.println(sol.minimumWindow("ADOBECODEBANC","ABC"));
+    }
+
+
+
+    void findItenerary(){
+        Solution332 sol = new Solution332();
+
+        List<List<String>> tickets = new ArrayList<>();
+        List<String> ticket1 = new ArrayList<>();
+        ticket1.add("JFK");
+        ticket1.add("KUL");
+        List<String> ticket2 = new ArrayList<>();
+        ticket2.add("JFK");
+        ticket2.add("NRT");
+        List<String> ticket3 = new ArrayList<>();
+        ticket3.add("NRT");
+        ticket3.add("JFK");
+
+        List<String> ticket1 = new ArrayList<>();
+        ticket1.add("JFK");
+        ticket1.add("SFO");
+        List<String> ticket2 = new ArrayList<>();
+        ticket2.add("JFK");
+        ticket2.add("ATL");
+        List<String> ticket3 = new ArrayList<>();
+        ticket3.add("SFO");
+        ticket3.add("ATL");
+        List<String> ticket4 = new ArrayList<>();
+        ticket4.add("ATL");
+        ticket4.add("JFK");
+        List<String> ticket5 = new ArrayList<>();
+        ticket5.add("ATL");
+        ticket5.add("SFO");
+
+        tickets.add(ticket1);
+        tickets.add(ticket2);
+        tickets.add(ticket3);
+        tickets.add(ticket4);
+        tickets.add(ticket5);
+
+        System.out.println(sol.findItinerary(tickets).toString());
+
+
+    }
+
+    */
+
+    void findDuplicate() {
+        Solution287 sol = new Solution287();
+        int[] arr = {1, 3, 4, 2, 2};
+        sol.findDuplicate(arr);
     }
 
 
