@@ -1,5 +1,7 @@
 package model;
 
+import leetcode.medium.Solution210;
+import leetcode.medium.Solution227;
 import leetcode.medium.Solution287;
 
 public class Main {
@@ -128,7 +130,9 @@ public class Main {
         //main.concatenatedWords();
         //main.wordBreak2();
         //main.findItenerary();
-        main.findDuplicate();
+        //main.findDuplicate();
+        //main.basicCalculator();
+        main.findOrder();
 
     }
 
@@ -1182,6 +1186,20 @@ public class Main {
         Solution287 sol = new Solution287();
         int[] arr = {1, 3, 4, 2, 2};
         sol.findDuplicate(arr);
+    }
+
+    void basicCalculator(){
+
+        Solution227 sol = new Solution227();
+        String s = "3+2*2";
+        System.out.println(sol.calculate(s));
+
+    }
+
+    void findOrder(){
+        Solution210 sol = new Solution210();
+        int[][] preRequisites = {{1,0},{2,0},{3,1},{3,2}};
+        sol.findOrder(4,preRequisites);
     }
 
 
