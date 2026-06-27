@@ -1,4 +1,6 @@
-public class Solution {
+// https://leetcode.com/problems/remove-element/
+
+public class Solution27 {
     public int RemoveElement(int[] nums, int val) {
 
         if(nums.Length ==  0)
