@@ -1,4 +1,6 @@
-public class Solution {
+// https://leetcode.com/problems/search-insert-position/
+
+public class Solution35 {
     public int SearchInsert(int[] nums, int target) {
         int i=0;
         int j= nums.Length-1;
